@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "drv_gpio.h": "c",
+        "n32g4fr.h": "c",
+        "pin.h": "c"
+    }
+}
