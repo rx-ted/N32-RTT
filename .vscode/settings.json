@@ -5,6 +5,8 @@
         "n32g4fr.h": "c",
         "pin.h": "c",
         "rtdevice.h": "c",
-        "board.h": "c"
+        "board.h": "c",
+        "stdio.h": "c",
+        "ssd1306_conf.h": "c"
     }
 }

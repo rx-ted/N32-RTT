@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 6,
+            "activePatchIndex": 8,
             "patches": [
                 {
                     "date": 1671539030864,
@@ -32,6 +32,14 @@
                 {
                     "date": 1672230946408,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,8 @@\n     \"files.associations\": {\r\n         \"drv_gpio.h\": \"c\",\r\n         \"n32g4fr.h\": \"c\",\r\n         \"pin.h\": \"c\",\r\n-        \"rtdevice.h\": \"c\"\r\n+        \"rtdevice.h\": \"c\",\r\n+        \"board.h\": \"c\"\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1672754037339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,8 @@\n         \"drv_gpio.h\": \"c\",\r\n         \"n32g4fr.h\": \"c\",\r\n         \"pin.h\": \"c\",\r\n         \"rtdevice.h\": \"c\",\r\n-        \"board.h\": \"c\"\r\n+        \"board.h\": \"c\",\r\n+        \"stdio.h\": \"c\"\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1672754206238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,8 @@\n         \"n32g4fr.h\": \"c\",\r\n         \"pin.h\": \"c\",\r\n         \"rtdevice.h\": \"c\",\r\n         \"board.h\": \"c\",\r\n-        \"stdio.h\": \"c\"\r\n+        \"stdio.h\": \"c\",\r\n+        \"ssd1306_conf.h\": \"c\"\r\n     }\r\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1671539030864,
