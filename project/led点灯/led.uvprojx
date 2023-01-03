@@ -409,11 +409,6 @@
               <FileType>1</FileType>
               <FilePath>.\user\src\n32g4fr_it.c</FilePath>
             </File>
-            <File>
-              <FileName>easyblink.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\user\src\easyblink.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>

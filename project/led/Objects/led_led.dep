@@ -1,1528 +1,0 @@
-Dependencies for Project 'led', Target 'led': (DO NOT MODIFY !)
-CompilerVersion: 6190000::V6.19::ARMCLANG
-F (..\..\CMSIS\device\startup\startup_n32g4fr.s)(0x62C52158)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-Wa,armasm,--pd,"__UVISION_VERSION SETA 538" -Wa,armasm,--pd,"N32G4FR SETA 1" -Wa,armasm,--pd,"USE_STDPERIPH_DRIVER SETA 1"-o ./objects/startup_n32g4fr.o)
-F (.\user\src\board.c)(0x62C52143)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/board.o -MD)
-I (..\..\include\rthw.h)(0x6388C8A4)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-I (user\inc\board.h)(0x62C52144)
-F (.\user\src\main.c)(0x62C52143)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/main.o -MD)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-I (..\..\DeviceDrivers\gpio\inc\drv_gpio.h)(0x62C5213E)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-I (..\..\drivers\include\drivers\pin.h)(0x6388C8B5)
-I (..\..\drivers\include\rtdevice.h)(0x6388C8B4)
-I (..\..\drivers\include\ipc\ringbuffer.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\completion.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\dataqueue.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\workqueue.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\waitqueue.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\pipe.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\poll.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\ringblk_buf.h)(0x6388C8B3)
-I (..\..\drivers\include\drivers\serial.h)(0x6388C8B4)
-I (..\..\DeviceDrivers\uart\inc\drv_usart.h)(0x62C5213E)
-I (..\..\include\rthw.h)(0x6388C8A4)
-F (.\user\src\n32g4fr_it.c)(0x62C52143)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_it.o -MD)
-I (user\inc\n32g4fr_it.h)(0x62C52143)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-I (user\inc\main.h)(0x62C52143)
-F (..\..\DeviceDrivers\uart\src\drv_usart.c)(0x62C5213E)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/drv_usart.o -MD)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-I (..\..\DeviceDrivers\uart\inc\drv_usart.h)(0x62C5213E)
-I (..\..\include\rthw.h)(0x6388C8A4)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-I (..\..\drivers\include\drivers\serial.h)(0x6388C8B4)
-I (..\..\drivers\include\ipc\completion.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\dataqueue.h)(0x6388C8B3)
-I (..\..\drivers\include\rtdevice.h)(0x6388C8B4)
-I (..\..\drivers\include\ipc\ringbuffer.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\workqueue.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\waitqueue.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\pipe.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\poll.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\ringblk_buf.h)(0x6388C8B3)
-I (..\..\drivers\include\drivers\pin.h)(0x6388C8B5)
-F (..\..\DeviceDrivers\gpio\src\drv_gpio.c)(0x62C5213E)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/drv_gpio.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-I (..\..\DeviceDrivers\gpio\inc\drv_gpio.h)(0x62C5213E)
-I (..\..\drivers\include\drivers\pin.h)(0x6388C8B5)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-I (..\..\drivers\include\rtdevice.h)(0x6388C8B4)
-I (..\..\drivers\include\ipc\ringbuffer.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\completion.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\dataqueue.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\workqueue.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\waitqueue.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\pipe.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\poll.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\ringblk_buf.h)(0x6388C8B3)
-I (..\..\drivers\include\drivers\serial.h)(0x6388C8B4)
-I (..\..\include\rthw.h)(0x6388C8A4)
-F (..\..\n32g4fr_std_periph_driver\src\misc.c)(0x62C52153)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/misc.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_adc.c)(0x62C52153)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_adc.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_bkp.c)(0x62C52153)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_bkp.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_can.c)(0x62C52153)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_can.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_crc.c)(0x62C52153)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_crc.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_dac.c)(0x62C52153)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_dac.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_dbg.c)(0x62C52152)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_dbg.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_dma.c)(0x62C52153)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_dma.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_dvp.c)(0x62C52152)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_dvp.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_exti.c)(0x62C52153)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_exti.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_flash.c)(0x62C52152)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_flash.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_gpio.c)(0x62C52152)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_gpio.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_i2c.c)(0x62C52153)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_i2c.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_iwdg.c)(0x62C52152)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_iwdg.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_pwr.c)(0x62C52153)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_pwr.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_qspi.c)(0x62C52153)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_qspi.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_rcc.c)(0x62C52153)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_rcc.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_rtc.c)(0x62DA04E4)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_rtc.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_sdio.c)(0x62C52152)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_sdio.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_spi.c)(0x62C52152)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_spi.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_tim.c)(0x62FCB15B)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_tim.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_tsc.c)(0x62C52152)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_tsc.o -MD)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_usart.c)(0x62C52152)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_usart.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\n32g4fr_std_periph_driver\src\n32g4fr_wwdg.c)(0x62C52153)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/n32g4fr_wwdg.o -MD)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\rt-thread\src\clock.c)(0x6388C8C0)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/clock.o -MD)
-I (..\..\include\rthw.h)(0x6388C8A4)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-F (..\..\rt-thread\src\components.c)(0x6388C8BF)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/components.o -MD)
-I (..\..\include\rthw.h)(0x6388C8A4)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-F (..\..\rt-thread\src\cpu.c)(0x6388C8C0)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/cpu.o -MD)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-I (..\..\include\rthw.h)(0x6388C8A4)
-F (..\..\rt-thread\src\device.c)(0x6388C8BF)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/device.o -MD)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-F (..\..\rt-thread\src\idle.c)(0x6388C8BF)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/idle.o -MD)
-I (..\..\include\rthw.h)(0x6388C8A4)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-F (..\..\rt-thread\src\ipc.c)(0x6388C8BF)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/ipc.o -MD)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-I (..\..\include\rthw.h)(0x6388C8A4)
-F (..\..\rt-thread\src\irq.c)(0x6388C8C0)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/irq.o -MD)
-I (..\..\include\rthw.h)(0x6388C8A4)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-F (..\..\rt-thread\src\kservice.c)(0x6388C8BF)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/kservice.o -MD)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-I (..\..\include\rthw.h)(0x6388C8A4)
-F (..\..\rt-thread\src\mem.c)(0x6388C8BF)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/mem.o -MD)
-I (..\..\include\rthw.h)(0x6388C8A4)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-F (..\..\rt-thread\src\memheap.c)(0x6388C8BF)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/memheap.o -MD)
-I (..\..\include\rthw.h)(0x6388C8A4)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-F (..\..\rt-thread\src\mempool.c)(0x6388C8BF)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/mempool.o -MD)
-I (..\..\include\rthw.h)(0x6388C8A4)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-F (..\..\rt-thread\src\object.c)(0x6388C8BF)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/object.o -MD)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-I (..\..\include\rthw.h)(0x6388C8A4)
-F (..\..\rt-thread\src\scheduler.c)(0x6388C8BF)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/scheduler.o -MD)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-I (..\..\include\rthw.h)(0x6388C8A4)
-F (..\..\rt-thread\src\signal.c)(0x6388C8BF)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/signal.o -MD)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
-I (..\..\include\rthw.h)(0x6388C8A4)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-F (..\..\rt-thread\src\slab.c)(0x6388C8BF)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/slab.o -MD)
-I (..\..\include\rthw.h)(0x6388C8A4)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-F (..\..\rt-thread\src\thread.c)(0x6388C8BF)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/thread.o -MD)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-I (..\..\include\rthw.h)(0x6388C8A4)
-F (..\..\rt-thread\src\timer.c)(0x6388C8BF)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/timer.o -MD)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-I (..\..\include\rthw.h)(0x6388C8A4)
-F (..\..\CMSIS\device\system_n32g4fr.c)(0x639F0E1F)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/system_n32g4fr.o -MD)
-I (..\..\CMSIS\device\n32g4fr.h)(0x62C52158)
-I (..\..\CMSIS\core\core_cm4.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (..\..\CMSIS\core\cmsis_version.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_compiler.h)(0x62C52159)
-I (..\..\CMSIS\core\cmsis_armclang.h)(0x62C52159)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (..\..\CMSIS\core\mpu_armv7.h)(0x62C52159)
-I (..\..\CMSIS\device\system_n32g4fr.h)(0x62C52158)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x63884908)
-I (..\..\CMSIS\device\n32g4fr_conf.h)(0x62C52158)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_adc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_bkp.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_can.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_crc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dac.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dbg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dma.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_dvp.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_exti.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_flash.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_gpio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_i2c.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_iwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_pwr.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_qspi.h)(0x62C52156)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rcc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_rtc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_sdio.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_spi.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tim.h)(0x62FCB14B)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_usart.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_wwdg.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\n32g4fr_tsc.h)(0x62C52155)
-I (..\..\n32g4fr_std_periph_driver\inc\misc.h)(0x62C52155)
-F (..\..\drivers\misc\pin.c)(0x6388C8B9)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/pin.o -MD)
-I (..\..\drivers\include\drivers\pin.h)(0x6388C8B5)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-I (..\..\drivers\include\rtdevice.h)(0x6388C8B4)
-I (..\..\drivers\include\ipc\ringbuffer.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\completion.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\dataqueue.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\workqueue.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\waitqueue.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\pipe.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\poll.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\ringblk_buf.h)(0x6388C8B3)
-I (..\..\drivers\include\drivers\serial.h)(0x6388C8B4)
-F (..\..\drivers\serial\serial.c)(0x6388C8B1)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/serial.o -MD)
-I (..\..\include\rthw.h)(0x6388C8A4)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-I (..\..\drivers\include\rtdevice.h)(0x6388C8B4)
-I (..\..\drivers\include\ipc\ringbuffer.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\completion.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\dataqueue.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\workqueue.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\waitqueue.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\pipe.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\poll.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\ringblk_buf.h)(0x6388C8B3)
-I (..\..\drivers\include\drivers\serial.h)(0x6388C8B4)
-I (..\..\drivers\include\drivers\pin.h)(0x6388C8B5)
-I (..\..\include\rtdbg.h)(0x6388C8A4)
-F (..\..\drivers\src\completion.c)(0x6388C8B5)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/completion.o -MD)
-I (..\..\include\rthw.h)(0x6388C8A4)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-I (..\..\drivers\include\rtdevice.h)(0x6388C8B4)
-I (..\..\drivers\include\ipc\ringbuffer.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\completion.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\dataqueue.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\workqueue.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\waitqueue.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\pipe.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\poll.h)(0x6388C8B3)
-I (..\..\drivers\include\ipc\ringblk_buf.h)(0x6388C8B3)
-I (..\..\drivers\include\drivers\serial.h)(0x6388C8B4)
-I (..\..\drivers\include\drivers\pin.h)(0x6388C8B5)
-F (..\..\rt-thread\libcpu\cortex-m4\cpuport.c)(0x6388C8C0)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-gdwarf-4 -O0 -fno-function-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../CMSIS/core -I ../../CMSIS/device -I ../../n32g4fr_std_periph_driver/inc -I ../../include -I ../../drivers/include/drivers -I ../../drivers/include/ipc -I ../../drivers/include -I ../../DeviceDrivers/gpio/inc -I ../../DeviceDrivers/uart/inc -I ./user/inc-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION="538" -DN32G4FR -DUSE_STDPERIPH_DRIVER -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/cpuport.o -MD)
-I (..\..\include\rtthread.h)(0x6388C8A3)
-I (user\inc\rtconfig.h)(0x62C52143)
-I (..\..\include\rtdebug.h)(0x6388C8A3)
-I (..\..\include\rtdef.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x63884908)
-I (..\..\include\rtlibc.h)(0x6388C8A3)
-I (..\..\include\libc\libc_stat.h)(0x6388C8A4)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Keil_v5\ARM\ARMCLANG\include\time.h)(0x63884908)
-I (..\..\include\libc\libc_errno.h)(0x6388C8A4)
-I (..\..\include\rtservice.h)(0x6388C8A4)
-I (..\..\include\rtm.h)(0x6388C8A4)
-F (..\..\rt-thread\libcpu\cortex-m4\context_rvds.S)(0x6388C8C0)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-IC:/Users/15524/AppData/Local/Arm/Packs/Nationstech/N32G4FR_DFP/1.0.4/firmware/CMSIS/device-D__UVISION_VERSION=538 -DN32G4FR -DUSE_STDPERIPH_DRIVER-o ./objects/context_rvds.o)

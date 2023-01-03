@@ -2,7 +2,7 @@
  * @Author: rx-ted
  * @Date: 2022-12-19 11:10:54
  * @LastEditors: rx-ted
- * @LastEditTime: 2023-01-02 21:09:29
+ * @LastEditTime: 2023-01-03 21:35:03
  */
 
 #include <rtthread.h>
@@ -30,13 +30,15 @@ int main(void)
 {
     ebled_t led1 = RT_NULL;
     led1 = easyblink_init_led(LED1_PIN, PIN_LOW);
-    while (1)
-    {
-        /* led1 闪3次，周期1000ms，亮500ms */
-        easyblink(led1, 10, 1000, 10000);
-        rt_thread_mdelay(2000);
-        easyblink(led1, 10, 200, 2000);
-        
 
-    }
+    /* led1 闪20次，周期1000ms，亮500ms */
+    easyblink(led1, 20, 500, 1000);
+
+    eb_led_off(led1);
+
+    rt_thread_mdelay(1000);
+    eb_led_on(led1);
+    rt_thread_mdelay(1000);
+    eb_led_toggle(led1);
+    rt_thread_mdelay(1000);
 }

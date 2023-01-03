@@ -1,7 +1,10 @@
 {
+    "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
         "drv_gpio.h": "c",
         "n32g4fr.h": "c",
-        "pin.h": "c"
+        "pin.h": "c",
+        "rtdevice.h": "c",
+        "board.h": "c"
     }
 }
