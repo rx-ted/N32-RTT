@@ -1,3 +1,9 @@
+/*
+ * @Author: rx-ted
+ * @Date: 2022-12-19 11:03:05
+ * @LastEditors: rx-ted
+ * @LastEditTime: 2023-01-04 21:32:02
+ */
 /*****************************************************************************
  * Copyright (c) 2019, Nations Technologies Inc.
  *
@@ -36,7 +42,7 @@
 #ifndef __DRV_I2C__
 #define __DRV_I2C__
 
-#include "i2c.h"
+#include <i2c.h>
 
 
 struct rt_i2c_bus

@@ -2,6 +2,8 @@
 #ifndef __RTTHREAD_CFG_H__
 #define __RTTHREAD_CFG_H__
 
+
+
 /* RT_NAME_MAX*/
 #define RT_NAME_MAX 8
 
@@ -122,8 +124,14 @@
 /* the max number of opened files   */
 #define DFS_FD_MAX 4
 
-#define RT_USING_PWM
-#define PWM_DEV_NAME "pwm1" /* PWM设备名称 */
-#define PWM_DEV_CHANNEL 4   /* PWM通道 */
+// #define RT_USING_PWM
+// #define PWM_DEV_NAME "pwm1" /* PWM设备名称 */
+// #define PWM_DEV_CHANNEL 4   /* PWM通道 */
+
+#define RT_USING_I2C
+#define RT_USING_I2C1
+#define RT_USING_I2C_BITOPS
+#define RT_USING_DEVICE
+#define FINSH_USING_MSH
 
 #endif

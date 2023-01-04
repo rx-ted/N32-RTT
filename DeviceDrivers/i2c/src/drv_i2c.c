@@ -39,6 +39,7 @@
 #include "n32g4fr_i2c.h"
 #include "drv_gpio.h"
 
+
 #ifdef RT_USING_I2C
 
 #include <rtdevice.h>

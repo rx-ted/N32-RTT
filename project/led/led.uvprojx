@@ -323,14 +323,14 @@
             <PlainCh>0</PlainCh>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
-            <wLevel>3</wLevel>
+            <wLevel>4</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
             <uGnu>1</uGnu>
             <useXO>0</useXO>
-            <v6Lang>1</v6Lang>
-            <v6LangP>5</v6LangP>
+            <v6Lang>3</v6Lang>
+            <v6LangP>0</v6LangP>
             <vShortEn>0</vShortEn>
             <vShortWch>0</vShortWch>
             <v6Lto>0</v6Lto>
@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>N32G4FR, USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\CMSIS\core;..\..\CMSIS\device;..\..\n32g4fr_std_periph_driver\inc;..\..\include;..\..\drivers\include\drivers;..\..\drivers\include\ipc;..\..\drivers\include;..\..\DeviceDrivers\gpio\inc;..\..\DeviceDrivers\uart\inc;.\user\inc</IncludePath>
+              <IncludePath>..\..\CMSIS\core;..\..\CMSIS\device;..\..\n32g4fr_std_periph_driver\inc;..\..\drivers\include\drivers;..\..\drivers\include\ipc;..\..\drivers\include;..\..\DeviceDrivers\i2c\inc;..\..\include;..\..\DeviceDrivers\gpio\inc;..\..\DeviceDrivers\uart\inc;.\user\inc;..\..\lib\rtt-ssd1306\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -409,11 +409,6 @@
               <FileType>1</FileType>
               <FilePath>.\user\src\n32g4fr_it.c</FilePath>
             </File>
-            <File>
-              <FileName>easyblink.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\user\src\easyblink.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -428,6 +423,11 @@
               <FileName>drv_gpio.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\DeviceDrivers\gpio\src\drv_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>drv_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\DeviceDrivers\i2c\src\drv_i2c.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -674,6 +674,21 @@
               <FileType>1</FileType>
               <FilePath>..\..\drivers\src\completion.c</FilePath>
             </File>
+            <File>
+              <FileName>i2c_core.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\drivers\i2c\i2c_core.c</FilePath>
+            </File>
+            <File>
+              <FileName>i2c-bit-ops.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\drivers\i2c\i2c-bit-ops.c</FilePath>
+            </File>
+            <File>
+              <FileName>i2c_dev.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\drivers\i2c\i2c_dev.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -688,6 +703,21 @@
               <FileName>context_rvds.S</FileName>
               <FileType>2</FileType>
               <FilePath>..\..\rt-thread\libcpu\cortex-m4\context_rvds.S</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>lib</GroupName>
+          <Files>
+            <File>
+              <FileName>ssd1306.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\rtt-ssd1306\src\ssd1306.c</FilePath>
+            </File>
+            <File>
+              <FileName>ssd1306_fonts.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\lib\rtt-ssd1306\src\ssd1306_fonts.c</FilePath>
             </File>
           </Files>
         </Group>
