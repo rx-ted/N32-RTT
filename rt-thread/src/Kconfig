@@ -10,7 +10,7 @@ config RT_NAME_MAX
 
 config RT_USING_ARCH_DATA_TYPE
     bool "Use the data types defined in ARCH_CPU"
-    default n
+    default y
     help
         For the data type like, `rt_uint8/int8_t, rt_uint16/int16_t, rt_uint32/int32_t`,
         BSP can define these basic data types in ARCH_CPU level.
@@ -307,7 +307,7 @@ menu "Kernel Device Object"
 
         config RT_CONSOLE_DEVICE_NAME
             string "the device name for console"
-            default "uart"
+            default "uart1"
     endif
 
 endmenu

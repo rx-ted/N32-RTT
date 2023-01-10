@@ -1,0 +1,127 @@
+# for sub directory
+SUBDIRS := $(shell find . -maxdepth 3 -type d)
+
+export SRC_AMSFILES :=
+export SRC_C_FILES :=  $(foreach dir, $(SUBDIRS), $(wildcard $(dir)/*.c))
+export SRC_INCFILES :=  $(foreach dir, $(SUBDIRS), $(wildcard $(dir)/*.h))
+export SRC_CXX_FILES :=
+export LINK_FILES :=
+SRC_INCFILES += ../../rt-thread/drivers/include/drivers/
+SRC_INCFILES += ../../rt-thread/drivers/include/ipc/
+SRC_INCFILES += ../../rt-thread/drivers/include/
+
+export CURDIR := ../..
+
+######################################USE_DRIVERS###################################################
+
+export USE_DRV_ADC=0
+export USE_DRV_ADC=0
+export USE_DRV_DAC=0
+export USE_DRV_PIN=0
+export USE_DRV_HWTIMER=0
+export USE_DRV_I2C=0
+export USE_DRV_SPI=0
+export USE_DRV_SERIAL=0
+export USE_DRV_WDT=0
+
+
+######################################SUB_MK###################################################
+
+PRO_DIR += ../../bsp
+PRO_DIR += ../../drivers
+PRO_DIR += ../../libraries 
+PRO_DIR += ../../rt-thread
+SUBMK += $(foreach dir, $(PRO_DIR), $(wildcard $(dir)/submake.mk))
+#$(info "$(SUBMK)")
+include $(SUBMK)
+
+################################################################################################
+OUTPUTDIR := output
+TARGET           	?= $(OUTPUTDIR)/main
+
+###################################################COMPILE######################################
+CROSS_COMPILE    	?= arm-none-eabi-
+
+CC               	:= $(CROSS_COMPILE)gcc
+CXX              	:= $(CROSS_COMPILE)g++
+LD               	:= $(CROSS_COMPILE)ld
+OBJCOPY          	:= $(CROSS_COMPILE)objcopy
+OBJDUMP          	:= $(CROSS_COMPILE)objdump
+SIZEINFO            := $(CROSS_COMPILE)size
+
+#############################################################ARM################################
+CPU           		:= -mcpu=cortex-m4
+FPU        			:= -mfpu=fpv4-sp-d16
+FLOAT_ABT 			:= -mfloat-abi=soft
+ARM_INSTRUCTION 	:= -mthumb
+MCU_FLAGS       	:= $(CPU) $(ARM_INSTRUCTION) $(FPU) $(FLOAT_ABT)
+
+##################################################COMPILE_FLAGS#################################
+C_COMPILE_FLAGS 	:= -lc -lm -lnosys -std=c99 -Wall -fdata-sections -ffunction-sections -g3 -gdwarf-2 -O0
+
+# CXX_COMPILE_FLAGS 	:= -lc -lm -lnosys -fno-rtti -std=c++99 -fno-exceptions -fno-builtin -Wall -fdata-sections -ffunction-sections -g3 -gdwarf-2 -O0
+
+ASM_COMPILE_FLAGS 	:= -x assembler-with-cpp
+#################################################################################################
+EXTRA_LINK_FLAGS	:= -g -gdwarf-2 -lc -lm -lnosys -T$(LINK_FILES) -Wl,-Map=main.map,--cref,--no-warn-mismatch -specs=nano.specs -specs=nosys.specs
+
+#################################################################################################
+DEFINE    := -DN32G4FR -DUSE_STDPERIPH_DRIVERPARAMS
+###############################################################
+CFLAGS 				+= $(MCU_FLAGS) $(C_COMPILE_FLAGS) $(DEFINE)
+# CXXFLAGS 			+= $(MCU_FLAGS) $(CXX_COMPILE_FLAGS) $(DEFINE)
+ASMFLAGS			+= $(MCU_FLAGS) $(ASM_COMPILE_FLAGS) $(DEFINE)
+
+LFLAGS += $(MCU_FLAGS)  $(EXTRA_LINK_FLAGS)
+
+INCLUDE 		 := $(patsubst %, -I %, $(sort $(dir $(SRC_INCFILES))))
+SFILES			 := $(SRC_AMSFILES)
+CFILES			 := $(SRC_C_FILES)
+# CXXFILES         := $(SRC_CXX_FILES)
+
+SFILENAME  		 := $(notdir $(SFILES))
+CFILENAME 		 := $(notdir $(CFILES))
+CXXFILENAME		 := $(notdir $(CXXFILES))
+
+SOBJS		 	 := $(sort $(patsubst %, $(OUTPUTDIR)/%, $(SFILENAME:.s=.o)))
+COBJS		 	 := $(sort $(patsubst %, $(OUTPUTDIR)/%, $(CFILENAME:.c=.o)))
+# CXXOBJS          := $(patsubst %, $(OUTPUTDIR)/%, $(CXXFILENAME:.cpp=.o))
+OBJS			 := $(SOBJS) $(COBJS) # $(CXXOBJS)
+
+SRCDIRS          := $(dir $(SFILES)) $(dir $(CFILES)) $(dir $(CXXFILES))
+VPATH			 := $(SRCDIRS)
+
+
+
+.PHONY: clean
+
+
+all:
+	
+	$(CC) $(ASMFLAGS) -c  $(SFILES)
+	$(CC) $(CFLAGS) $(INCLUDE) -c $(CFILES)
+	$(CC) $(LFLAGS) $(shell ls *.o)  -o main.elf 
+	$(SIZEINFO) main.elf 
+	$(OBJCOPY) -O binary -S main.elf main.bin
+	
+# $(asm_obj):$(SFILES)
+# 	$(CC) $(ASMFLAGS) -c $<  -o $@ 
+	
+
+
+
+# $(TARGET).elf:$(OBJS)
+# 	$(CC) -o $(TARGET).elf $^ $(LFLAGS)
+
+# $(SOBJS) :$(SFILES) Makefile | $(OUTPUTDIR)
+# 	$(CC) $(ASMFLAGS) -c $<  -o $@ 
+
+
+# $(COBJS): $(CFILES) Makefile  | $(OUTPUTDIR)
+# 	$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@ 
+
+# $(CXXOBJS) : $(OUTPUTDIR)/%.o : %.cpp
+# 	$(CXX) -c $(CXXFLAGS) $(INCLUDE) -o $@ $<
+
+clean:
+	rm -rf $(OUTPUTDIR)/*

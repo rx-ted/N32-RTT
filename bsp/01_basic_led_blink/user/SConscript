@@ -1,0 +1,10 @@
+from building import *
+
+cwd     = GetCurrentDir()
+src     = Glob('src/*.c')
+CPPPATH = [str(Dir('#')), cwd]
+CPPPATH += [cwd + '/inc']
+
+group = DefineGroup('Applications', src, depend = [''], CPPPATH = CPPPATH)
+
+Return('group')

@@ -1,3 +1,9 @@
+'''
+Author: rx-ted
+Date: 2023-01-06 22:18:03
+LastEditors: rx-ted
+LastEditTime: 2023-01-07 21:10:08
+'''
 Import('RTT_ROOT')
 Import('rtconfig')
 from building import *
@@ -5,6 +11,7 @@ from building import *
 src = Glob('*.c')
 
 CPPPATH = [RTT_ROOT + '/include']
+CPPPATH +=[RTT_ROOT + '/include/libc']
 
 if GetDepend('RT_USING_MODULE') == False:
     SrcRemove(src, ['module.c'])

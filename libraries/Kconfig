@@ -1,0 +1,19 @@
+# config N32G4FR
+#     bool "N32G4FR"
+#     default y
+
+# config USE_STDPERIPH_DRIVER
+#     bool "USE STDPERIPH DRIVER"
+#     default y
+
+menu "External Libraries"
+
+    config RT_USING_ALGO_LIB
+        bool "Using Alogrithm Library"
+        default n
+
+    config RT_USING_USB_LIB
+        bool "Using USB Library"
+        default n
+
+endmenu

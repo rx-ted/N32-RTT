@@ -1,0 +1,18 @@
+'''
+Author: rx-ted
+Date: 2023-01-06 22:18:00
+LastEditors: rx-ted
+LastEditTime: 2023-01-07 19:25:50
+'''
+import rtconfig
+from building import *
+
+cwd = GetCurrentDir()
+
+src = [cwd + '/device/system_n32g4fr.c']
+
+path = [cwd + '/device', cwd + '/core']
+
+group = DefineGroup('n32g4fr_std_periph_driver', src, depend = [''], CPPPATH = path)
+
+Return('group')
