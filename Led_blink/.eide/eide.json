@@ -134,9 +134,6 @@
           },
           {
             "path": "user/src/n32g4fr_it.c"
-          },
-          {
-            "path": "user/src/ssd1306.c"
           }
         ],
         "folders": []
@@ -178,14 +175,15 @@
         "../drivers/drv_adc.c",
         "../drivers/drv_can.c",
         "../drivers/drv_dac.c",
-        "../drivers/drv_hwtimer.c",
         "../drivers/drv_spi.c",
         "../drivers/drv_wdt.c",
         "../rt-thread/components/cplusplus",
         "../rt-thread/components/libc",
         "../packages/rtt-ssd1306/tools",
         "../packages/rtt-ssd1306/src/ssd1306_fonts.c",
-        "../packages/rtt-ssd1306"
+        "../packages/rtt-ssd1306",
+        "<virtual_root>/USER/ssd1306.c",
+        "../packages/soft_i2c_rtt"
       ],
       "toolchain": "AC6",
       "compileConfig": {
@@ -250,7 +248,8 @@
           "../rt-thread/components/drivers/include/drivers",
           "../rt-thread/components/drivers/include/ipc",
           "../rt-thread/components/finsh",
-          "../packages/soft_i2c_rtt"
+          "../packages/soft_i2c_rtt",
+          "../packages/infrared_framework/inc"
         ],
         "libList": [
           ".."
