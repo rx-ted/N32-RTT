@@ -1,9 +1,3 @@
-/*
- * @Author: rx-ted
- * @Date: 2023-01-15 13:28:23
- * @LastEditors: rx-ted
- * @LastEditTime: 2023-01-16 18:52:27
- */
 /*****************************************************************************
  * Copyright (c) 2019, Nations Technologies Inc.
  *
@@ -32,48 +26,79 @@
  * ****************************************************************************/
 
 /**
- * @file drv_gpio.h
+ * @file log.h
  * @author Nations
- * @version v1.0.0
+ * @version v1.0.1
  *
  * @copyright Copyright (c) 2019, Nations Technologies Inc. All rights reserved.
  */
+#ifndef __LOG_H__
+#define __LOG_H__
 
-#ifndef __DRV_GPIO_H__
-#define __DRV_GPIO_H__
+#ifndef LOG_ENABLE
+#define LOG_ENABLE 1
+#endif
+
+#if LOG_ENABLE
 
 #include "n32g4fr.h"
+#include <stdio.h>
 
-#define __N32G4FR_PORT(port)  GPIO##port##_BASE
+#define LOG_USARTx              USART1
+#define LOG_PERIPH              RCC_APB2_PERIPH_USART1
+#define LOG_ENABLE_PERIPH_CLK   RCC_EnableAPB2PeriphClk
+#define LOG_GPIO                GPIOA
+#define LOG_PERIPH_GPIO         RCC_APB2_PERIPH_GPIOA
+#define LOG_REMAP               0
+#define LOG_TX_PIN              GPIO_PIN_9
+#define LOG_RX_PIN              GPIO_PIN_10
 
-#define GET_PIN(PORTx,PIN) (rt_base_t)((16 * ( ((rt_base_t)__N32G4FR_PORT(PORTx) - (rt_base_t)GPIOA_BASE)/(0x0400UL) )) + PIN)
+#define LOG_NONE    0
+#define LOG_ERROR   10
+#define LOG_WARNING 20
+#define LOG_INFO    30
+#define LOG_DEBUG   40
 
-#define __N32G4FR_PIN(index, gpio, gpio_pin)                                \
-    {                                                                       \
-        index, gpio, gpio_pin                                               \
-    }
+#ifndef LOG_LEVEL
+#define LOG_LEVEL LOG_DEBUG
+#endif
 
-#define __N32G4FR_PIN_RESERVE                                               \
-    {                                                                       \
-        -1, 0, 0                                                            \
-    }
+#if LOG_LEVEL >= LOG_INFO
+#define log_info(...) printf(__VA_ARGS__)
+#else
+#define log_info(...)
+#endif
 
-/* N32G4FR GPIO driver */
-struct pin_index
-{
-    int index;
-    GPIO_Module *gpio;
-    uint32_t pin;
-};
+#if LOG_LEVEL >= LOG_ERROR
+#define log_error(...) printf(__VA_ARGS__)
+#else
+#define log_error(...)
+#endif
 
-struct pin_irq_map
-{
-    uint16_t pinbit;
-    IRQn_Type irqno;
-};
+#if LOG_LEVEL >= LOG_WARNING
+#define log_warning(...) printf(__VA_ARGS__)
+#else
+#define log_warning(...)
+#endif
 
-void GPIOInit(GPIO_Module* GPIOx, GPIO_ModeType mode, GPIO_SpeedType speed, uint16_t Pin);
-int rt_hw_pin_init(void);
+#if LOG_LEVEL >= LOG_DEBUG
+#define log_debug(...) printf(__VA_ARGS__)
+#else
+#define log_debug(...)
+#endif
 
-#endif /* __DRV_GPIO_H__ */
+void log_init(void);
 
+#else /* !LOG_ENABLE */
+
+#define log_info(...)
+#define log_warning(...)
+#define log_error(...)
+#define log_debug(...)
+#define log_init()
+
+#endif
+
+#define log_func() log_debug("call %s\r\n", __FUNCTION__)
+
+#endif /* __LOG_H__ */

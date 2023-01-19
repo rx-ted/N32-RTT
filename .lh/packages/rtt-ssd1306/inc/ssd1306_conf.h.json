@@ -1,0 +1,26 @@
+{
+    "sourceFile": "packages/rtt-ssd1306/inc/ssd1306_conf.h",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1673770342562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1673770490487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,20 @@\n+/*\r\n+ * @Author: rx-ted\r\n+ * @Date: 2023-01-15 16:01:24\r\n+ * @LastEditors: rx-ted\r\n+ * @LastEditTime: 2023-01-15 16:14:50\r\n+ */\r\n /**\r\n  * Private configuration file for the SSD1306 library.\r\n  * This example is configured for STM32F0, I2C and including all fonts.\r\n  */\r\n \r\n #ifndef __SSD1306_CONF_H__\r\n #define __SSD1306_CONF_H__\r\n \r\n+#include\"rtconfig.h\"\r\n \r\n-\r\n // Choose a bus\r\n #define SSD1306_USE_I2C\r\n //#define SSD1306_USE_SPI\r\n \r\n"
+                },
+                {
+                    "date": 1673771026185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n /*\r\n  * @Author: rx-ted\r\n  * @Date: 2023-01-15 16:01:24\r\n  * @LastEditors: rx-ted\r\n- * @LastEditTime: 2023-01-15 16:14:50\r\n+ * @LastEditTime: 2023-01-15 16:23:46\r\n  */\r\n /**\r\n  * Private configuration file for the SSD1306 library.\r\n  * This example is configured for STM32F0, I2C and including all fonts.\r\n@@ -11,29 +11,7 @@\n \r\n #ifndef __SSD1306_CONF_H__\r\n #define __SSD1306_CONF_H__\r\n \r\n-#include\"rtconfig.h\"\r\n \r\n-// Choose a bus\r\n-#define SSD1306_USE_I2C\r\n-//#define SSD1306_USE_SPI\r\n \r\n-// I2C Configuration\r\n-#define SSD1306_I2C_PORT        hi2c1\r\n-#define SSD1306_I2C_BUS         PKG_USING_SSD1306_I2C_BUS_NAME\r\n-#define SSD1306_I2C_ADDR        PKG_USING_SSD1306_I2C_ADDRESS\r\n-\r\n-// Mirror the screen if needed\r\n-// #define SSD1306_MIRROR_VERT\r\n-// #define SSD1306_MIRROR_HORIZ\r\n-\r\n-// Set inverse color if needed\r\n-// # define SSD1306_INVERSE_COLOR\r\n-\r\n-// Include only needed fonts\r\n-#define SSD1306_INCLUDE_FONT_6x8\r\n-#define SSD1306_INCLUDE_FONT_7x10\r\n-#define SSD1306_INCLUDE_FONT_11x18\r\n-#define SSD1306_INCLUDE_FONT_16x26\r\n-\r\n #endif /* __SSD1306_CONF_H__ */\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1673770342562,
+            "name": "Commit-0",
+            "content": "/**\r\n * Private configuration file for the SSD1306 library.\r\n * This example is configured for STM32F0, I2C and including all fonts.\r\n */\r\n\r\n#ifndef __SSD1306_CONF_H__\r\n#define __SSD1306_CONF_H__\r\n\r\n\r\n\r\n// Choose a bus\r\n#define SSD1306_USE_I2C\r\n//#define SSD1306_USE_SPI\r\n\r\n// I2C Configuration\r\n#define SSD1306_I2C_PORT        hi2c1\r\n#define SSD1306_I2C_BUS         PKG_USING_SSD1306_I2C_BUS_NAME\r\n#define SSD1306_I2C_ADDR        PKG_USING_SSD1306_I2C_ADDRESS\r\n\r\n// Mirror the screen if needed\r\n// #define SSD1306_MIRROR_VERT\r\n// #define SSD1306_MIRROR_HORIZ\r\n\r\n// Set inverse color if needed\r\n// # define SSD1306_INVERSE_COLOR\r\n\r\n// Include only needed fonts\r\n#define SSD1306_INCLUDE_FONT_6x8\r\n#define SSD1306_INCLUDE_FONT_7x10\r\n#define SSD1306_INCLUDE_FONT_11x18\r\n#define SSD1306_INCLUDE_FONT_16x26\r\n\r\n#endif /* __SSD1306_CONF_H__ */"
+        }
+    ]
+}

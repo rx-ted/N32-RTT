@@ -1,9 +1,3 @@
-/*
- * @Author: rx-ted
- * @Date: 2023-01-15 13:28:23
- * @LastEditors: rx-ted
- * @LastEditTime: 2023-01-16 18:52:27
- */
 /*****************************************************************************
  * Copyright (c) 2019, Nations Technologies Inc.
  *
@@ -32,48 +26,34 @@
  * ****************************************************************************/
 
 /**
- * @file drv_gpio.h
+ * @file main.h
  * @author Nations
  * @version v1.0.0
  *
  * @copyright Copyright (c) 2019, Nations Technologies Inc. All rights reserved.
  */
+#ifndef __MAIN_H__
+#define __MAIN_H__
 
-#ifndef __DRV_GPIO_H__
-#define __DRV_GPIO_H__
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #include "n32g4fr.h"
 
-#define __N32G4FR_PORT(port)  GPIO##port##_BASE
+#ifdef __cplusplus
+}
+#endif
 
-#define GET_PIN(PORTx,PIN) (rt_base_t)((16 * ( ((rt_base_t)__N32G4FR_PORT(PORTx) - (rt_base_t)GPIOA_BASE)/(0x0400UL) )) + PIN)
+#endif /* __MAIN_H__ */
+/**
+ * @}
+ */
 
-#define __N32G4FR_PIN(index, gpio, gpio_pin)                                \
-    {                                                                       \
-        index, gpio, gpio_pin                                               \
-    }
+/**
+ * @}
+ */
 
-#define __N32G4FR_PIN_RESERVE                                               \
-    {                                                                       \
-        -1, 0, 0                                                            \
-    }
-
-/* N32G4FR GPIO driver */
-struct pin_index
-{
-    int index;
-    GPIO_Module *gpio;
-    uint32_t pin;
-};
-
-struct pin_irq_map
-{
-    uint16_t pinbit;
-    IRQn_Type irqno;
-};
-
-void GPIOInit(GPIO_Module* GPIOx, GPIO_ModeType mode, GPIO_SpeedType speed, uint16_t Pin);
-int rt_hw_pin_init(void);
-
-#endif /* __DRV_GPIO_H__ */
-
+/**
+ * @}
+ */

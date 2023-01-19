@@ -1,0 +1,18 @@
+{
+    "sourceFile": "packages/rtt-ssd1306/examples/ssd1306_tests.h",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1673770292056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1673770292056,
+            "name": "Commit-0",
+            "content": "/*\r\n * Copyright (c) 2020, RudyLo <luhuadong@163.com>\r\n *\r\n * SPDX-License-Identifier: MIT License\r\n *\r\n * Change Logs:\r\n * Date           Author       Notes\r\n * 2020-11-15     luhuadong    the first version\r\n */\r\n\r\n#ifndef __SSD1306_TEST_H__\r\n#define __SSD1306_TEST_H__\r\n\r\n\r\nvoid ssd1306_TestBorder(void);\r\nvoid ssd1306_TestFonts(void);\r\nvoid ssd1306_TestFPS(void);\r\nvoid ssd1306_TestAll(void);\r\nvoid ssd1306_TestLine(void);\r\nvoid ssd1306_TestRectangle(void);\r\nvoid ssd1306_TestCircle(void);\r\nvoid ssd1306_TestArc(void);\r\nvoid ssd1306_TestPolyline(void);\r\n\r\n\r\n\r\n_END_STD_C\r\n\r\n#endif // __SSD1306_TEST_H__\r\n"
+        }
+    ]
+}
