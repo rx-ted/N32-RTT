@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<package schemaVersion="1.4.0" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="PACK.xsd">
+    <vendor>Nationstech</vendor>
+    <url>http://www.keil.com/pack/</url>
+    <name>N32G4FR_DFP</name>
+
+    <description>Nationstech N32G4FR Series Device Support, Drivers and Examples</description>
+
+    <releases>
+        <release version="1.0.4">
+            Add WWDG peripheral
+        </release>
+        <release version="1.0.3">
+            Modify some errors of device description.
+        </release>
+    <release version="1.0.2">
+            Delete firmware.
+        </release>
+        <release version="1.0.1">
+            Fix some bug.
+        </release>
+        <release version="1.0.0">
+            Fix some bug.
+        </release>
+        <release version="0.4.0">
+            First version.
+        </release>
+    </releases>
+
+    <keywords>
+        <keyword>Nationstech</keyword>
+        <keyword>Device Support</keyword>
+        <keyword>N32G4FR</keyword>
+        <keyword>N32</keyword>
+    </keywords>
+
+
+    <devices>
+        <family Dfamily="N32G4FR Series" Dvendor="Nationstech:927">
+            <processor Dcore="Cortex-M4" DcoreVersion="r0p1" Dfpu="1" Dmpu="0" Dendian="Little-endian"/>
+            <description>
+            </description>
+            <subFamily DsubFamily="N32G4FR">
+                <description>
+Up to 144MHz ARM Cortex-M4F, 512KB Flash, 144KB SRAM, 7xU(S)ART, 4xI2C, 3xSPI, 1xQSPI, USB 2.0 FS Device, RTC, 2x 12bit 5Msps ADC, 2x12bit DAC, DVP, up to 18 Channels TSC, Hardware Cryptographic Engine, Fingerprint algorithm.
+                </description>
+                <processor Dclock="144000000"/>
+                <compile header="firmware/CMSIS/device/n32g4fr.h" define="N32G4FR USE_STDPERIPH_DRIVER"/>
+
+<device Dname="N32G4FRKCQ7">
+    <description>
+&#xA;&#xD;
+- Package:QFN32&#xA;&#xD;
+- Clock:  144MHz&#xA;&#xD;
+- Flash:  256KB&#xA;&#xD;
+- SRAM:   144KB&#xA;&#xD;
+- I/O:    24&#xA;&#xD;
+- Voltage: 1.8V~3.6V -40~+105°C&#xA;&#xD;
+- Timer:  6&#xA;&#xD;
+- RTC:    1&#xA;&#xD;
+- PWM:    10&#xA;&#xD;
+- ADC:    1x12bit with 7 channels&#xA;&#xD;
+- DAC:    2x12-bit&#xA;&#xD;
+- USART:  1&#xA;&#xD;
+- UART:   3&#xA;&#xD;
+- SPI/I2S:2/1&#xA;&#xD;
+- I2C:    3&#xA;&#xD;
+- USB Device: 1&#xA;&#xD;
+- CAN:    1&#xA;&#xD;
+- TSC:    2&#xA;&#xD;
+- QSPI:   1&#xA;&#xD;
+&#xA;&#xD;
+Remark:&#xA;&#xD;
+[1*] Only Single Wire&#xA;&#xD;
+[Y*] Only LCD Mode&#xA;&#xD;
+
+    </description>
+    <memory id="IRAM1" access="rw" start="0x20000000" size="0x24000" default="1" init="0" />
+    <memory id="IROM1" access="rx" start="0x08000000" size="0x40000" default="1" startup="1" />
+    <algorithm name="Flash/N32G4FR.FLM" start="0x08000000" size="0x40000" default="1" startup="1" />
+    <debug svd="svd/N32G4FR.svd"/>
+</device>
+
+
+<device Dname="N32G4FRKEQ7">
+    <description>
+&#xA;&#xD;
+- Package:QFN32&#xA;&#xD;
+- Clock:  144MHz&#xA;&#xD;
+- Flash:  512KB&#xA;&#xD;
+- SRAM:   144KB&#xA;&#xD;
+- I/O:    24&#xA;&#xD;
+- Voltage: 1.8V~3.6V -40~+105°C&#xA;&#xD;
+- Timer:  6&#xA;&#xD;
+- RTC:    1&#xA;&#xD;
+- PWM:    10&#xA;&#xD;
+- ADC:    1x12bit with 7 channels&#xA;&#xD;
+- DAC:    2x12-bit&#xA;&#xD;
+- USART:  1&#xA;&#xD;
+- UART:   3&#xA;&#xD;
+- SPI/I2S:2/1&#xA;&#xD;
+- I2C:    3&#xA;&#xD;
+- USB Device: 1&#xA;&#xD;
+- CAN:    1&#xA;&#xD;
+- TSC:    2&#xA;&#xD;
+- QSPI:   1&#xA;&#xD;
+&#xA;&#xD;
+Remark:&#xA;&#xD;
+[1*] Only Single Wire&#xA;&#xD;
+[Y*] Only LCD Mode&#xA;&#xD;
+
+    </description>
+    <memory id="IRAM1" access="rw" start="0x20000000" size="0x24000" default="1" init="0" />
+    <memory id="IROM1" access="rx" start="0x08000000" size="0x80000" default="1" startup="1" />
+    <algorithm name="Flash/N32G4FR.FLM" start="0x08000000" size="0x80000" default="1" startup="1" />
+    <debug svd="svd/N32G4FR.svd"/>
+</device>
+
+
+<device Dname="N32G4FRHCQ7">
+    <description>
+&#xA;&#xD;
+- Package:QFN40&#xA;&#xD;
+- Clock:  144MHz&#xA;&#xD;
+- Flash:  256KB&#xA;&#xD;
+- SRAM:   144KB&#xA;&#xD;
+- I/O:    32&#xA;&#xD;
+- Voltage: 1.8V~3.6V -40~+105°C&#xA;&#xD;
+- Timer:  7&#xA;&#xD;
+- RTC:    1&#xA;&#xD;
+- PWM:    12&#xA;&#xD;
+- ADC:    2x12bit with 11 channels&#xA;&#xD;
+- DAC:    2x12-bit&#xA;&#xD;
+- USART:  2&#xA;&#xD;
+- UART:   4&#xA;&#xD;
+- SPI/I2S:3/2&#xA;&#xD;
+- I2C:    4&#xA;&#xD;
+- USB Device: 1&#xA;&#xD;
+- CAN:    2&#xA;&#xD;
+- TSC:    5&#xA;&#xD;
+- QSPI:   1&#xA;&#xD;
+- DVP:   Y&#xA;&#xD;
+&#xA;&#xD;
+Remark:&#xA;&#xD;
+[1*] Only Single Wire&#xA;&#xD;
+[Y*] Only LCD Mode&#xA;&#xD;
+
+    </description>
+    <memory id="IRAM1" access="rw" start="0x20000000" size="0x24000" default="1" init="0" />
+    <memory id="IROM1" access="rx" start="0x08000000" size="0x40000" default="1" startup="1" />
+    <algorithm name="Flash/N32G4FR.FLM" start="0x08000000" size="0x40000" default="1" startup="1" />
+    <debug svd="svd/N32G4FR.svd"/>
+</device>
+
+
+<device Dname="N32G4FRHEQ7">
+    <description>
+&#xA;&#xD;
+- Package:QFN40&#xA;&#xD;
+- Clock:  144MHz&#xA;&#xD;
+- Flash:  512KB&#xA;&#xD;
+- SRAM:   144KB&#xA;&#xD;
+- I/O:    32&#xA;&#xD;
+- Voltage: 1.8V~3.6V -40~+105°C&#xA;&#xD;
+- Timer:  7&#xA;&#xD;
+- RTC:    1&#xA;&#xD;
+- PWM:    12&#xA;&#xD;
+- ADC:    2x12bit with 11 channels&#xA;&#xD;
+- DAC:    2x12-bit&#xA;&#xD;
+- USART:  2&#xA;&#xD;
+- UART:   4&#xA;&#xD;
+- SPI/I2S:3/2&#xA;&#xD;
+- I2C:    4&#xA;&#xD;
+- USB Device: 1&#xA;&#xD;
+- CAN:    2&#xA;&#xD;
+- TSC:    5&#xA;&#xD;
+- QSPI:   1&#xA;&#xD;
+- DVP:   Y&#xA;&#xD;
+&#xA;&#xD;
+Remark:&#xA;&#xD;
+[1*] Only Single Wire&#xA;&#xD;
+[Y*] Only LCD Mode&#xA;&#xD;
+
+    </description>
+    <memory id="IRAM1" access="rw" start="0x20000000" size="0x24000" default="1" init="0" />
+    <memory id="IROM1" access="rx" start="0x08000000" size="0x80000" default="1" startup="1" />
+    <algorithm name="Flash/N32G4FR.FLM" start="0x08000000" size="0x80000" default="1" startup="1" />
+    <debug svd="svd/N32G4FR.svd"/>
+</device>
+
+
+<device Dname="N32G4FRREL7">
+    <description>
+&#xA;&#xD;
+- Package:LQFP64&#xA;&#xD;
+- Clock:  144MHz&#xA;&#xD;
+- Flash:  512KB&#xA;&#xD;
+- SRAM:   144KB&#xA;&#xD;
+- I/O:    51&#xA;&#xD;
+- Voltage: 1.8V~3.6V -40~+105°C&#xA;&#xD;
+- Timer:  8&#xA;&#xD;
+- RTC:    1&#xA;&#xD;
+- PWM:    24&#xA;&#xD;
+- ADC:    2x12bit with 16 channels&#xA;&#xD;
+- DAC:    2x12-bit&#xA;&#xD;
+- USART:  3&#xA;&#xD;
+- UART:   4&#xA;&#xD;
+- SPI/I2S:3/2&#xA;&#xD;
+- I2C:    4&#xA;&#xD;
+- USB Device: 1&#xA;&#xD;
+- CAN:    2&#xA;&#xD;
+- TSC:    16&#xA;&#xD;
+- QSPI:   1&#xA;&#xD;
+- SDIO:   1&#xA;&#xD;
+- DVP:   Y&#xA;&#xD;
+&#xA;&#xD;
+Remark:&#xA;&#xD;
+[1*] Only Single Wire&#xA;&#xD;
+[Y*] Only LCD Mode&#xA;&#xD;
+
+    </description>
+    <memory id="IRAM1" access="rw" start="0x20000000" size="0x24000" default="1" init="0" />
+    <memory id="IROM1" access="rx" start="0x08000000" size="0x80000" default="1" startup="1" />
+    <algorithm name="Flash/N32G4FR.FLM" start="0x08000000" size="0x80000" default="1" startup="1" />
+    <debug svd="svd/N32G4FR.svd"/>
+</device>
+
+
+<device Dname="N32G4FRMEL7">
+    <description>
+&#xA;&#xD;
+- Package:LQFP80&#xA;&#xD;
+- Clock:  144MHz&#xA;&#xD;
+- Flash:  512KB&#xA;&#xD;
+- SRAM:   144KB&#xA;&#xD;
+- I/O:    67&#xA;&#xD;
+- Voltage: 1.8V~3.6V -40~+105°C&#xA;&#xD;
+- Timer:  8&#xA;&#xD;
+- RTC:    1&#xA;&#xD;
+- PWM:    24&#xA;&#xD;
+- ADC:    2x12bit with 16 channels&#xA;&#xD;
+- DAC:    2x12-bit&#xA;&#xD;
+- USART:  3&#xA;&#xD;
+- UART:   4&#xA;&#xD;
+- SPI/I2S:3/2&#xA;&#xD;
+- I2C:    4&#xA;&#xD;
+- USB Device: 1&#xA;&#xD;
+- CAN:    2&#xA;&#xD;
+- TSC:    18&#xA;&#xD;
+- QSPI:   1&#xA;&#xD;
+- SDIO:   1&#xA;&#xD;
+- DVP:   Y&#xA;&#xD;
+&#xA;&#xD;
+Remark:&#xA;&#xD;
+[1*] Only Single Wire&#xA;&#xD;
+[Y*] Only LCD Mode&#xA;&#xD;
+
+    </description>
+    <memory id="IRAM1" access="rw" start="0x20000000" size="0x24000" default="1" init="0" />
+    <memory id="IROM1" access="rx" start="0x08000000" size="0x80000" default="1" startup="1" />
+    <algorithm name="Flash/N32G4FR.FLM" start="0x08000000" size="0x80000" default="1" startup="1" />
+    <debug svd="svd/N32G4FR.svd"/>
+</device>
+
+            </subFamily>
+        </family>
+    </devices>
+        
+
+    <conditions>
+        <condition id="Compiler ARM">            <!-- conditions selecting ARM Compiler -->
+            <require Tcompiler="ARMCC"/>
+        </condition>
+
+        <condition id="N32G4FR CMSIS Device">            <!-- conditions selecting Devices -->
+            <description>Nationstech N32G4FR Series devices</description>
+            <require Cclass ="CMSIS" Cgroup="CORE" Csub=""/>
+            <require Dvendor="Nationstech:927" Dname="N32*"/>
+        </condition>
+
+        <condition id="N32G4FR STDPERIPH">
+            <description>Nationstech N32G4FR Standard Peripherals Drivers</description>
+            <require condition="N32G4FR CMSIS Device"/>
+            <require Cclass="Device" Cgroup="StdPeriph Drivers" Csub="Framework"/>
+        </condition>
+
+        <condition id="N32G4FR STDPERIPH RCC">
+            <description>Nationstech N32G4FR Standard Peripherals Drivers with RCC</description>
+            <require condition="N32G4FR STDPERIPH"/>
+            <require Cclass="Device" Cgroup="StdPeriph Drivers" Csub="RCC"/>
+        </condition>
+
+        <condition id="N32G4FR Algorithm Common" >
+            <description>Nationstech N32G4FR Series Algorithm Libraries Common Functions.</description>
+            <require condition="N32G4FR CMSIS Device"/>
+            <require Cclass ="Device" Cgroup="Algorithm Libs" Csub="Common"/>
+        </condition>
+
+    </conditions>
+
+    <components>
+        <component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="N32G4FR CMSIS Device">
+            <description>Startup File for Nationstech N32G4FR Series</description>
+            <files>
+                <!--  include folder -->
+                <file category="include" name="firmware/CMSIS/device/"/>
+                <file category="source" name="firmware/CMSIS/device/startup/startup_n32g4fr.s" attr="config" condition="N32G4FR CMSIS Device" version="1.0.0"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="System_N32G4FR" Cversion="1.0.0" condition="N32G4FR CMSIS Device">
+            <description>System Clock Config File for Nationstech N32G4FR</description>
+            <files>
+                <!--  include folder -->
+                <file category="include" name="firmware/CMSIS/device/"/>
+                <file category="source" name="firmware/CMSIS/device/system_n32g4fr.c" attr="config" version="1.0.0"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="Framework" Cversion="1.0.0" condition="N32G4FR STDPERIPH">
+            <description>Standard Peripherals Drivers Framework</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_FRAMEWORK
+            </RTE_Components_h>
+            <files>
+                <file category="include" name="firmware/n32g4fr_std_periph_driver/inc/"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/misc.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="WWDG" Cversion="1.0.0" condition="N32G4FR STDPERIPH RCC">
+            <description>Window watchdog (WWDG) driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_WWDG
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_wwdg.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_wwdg.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="USART" Cversion="1.0.0" condition="N32G4FR STDPERIPH RCC">
+            <description>Universal synchronous asynchronous receiver transmitter (USART) driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_USART
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_usart.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_usart.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="TIMER" Cversion="1.0.0" condition="N32G4FR STDPERIPH RCC">
+            <description>Timers (TIMER) driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_TIM
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_tim.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_tim.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="SPI" Cversion="1.0.0" condition="N32G4FR STDPERIPH RCC">
+            <description>Serial peripheral interface (SPI) driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_SPI
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_spi.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_spi.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="SDIO" Cversion="1.0.0" condition="N32G4FR STDPERIPH RCC">
+            <description>Secure digital (SDIO) interface driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_SDIO
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_sdio.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_sdio.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="ADC" Cversion="1.0.0" condition="N32G4FR STDPERIPH RCC">
+            <description>Analog-to-digital converter (ADC) driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_ADC
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_adc.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_adc.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="BKP" Cversion="1.0.0" condition="N32G4FR STDPERIPH RCC">
+            <description>Backup registers (BKPR) driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_BKP
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_bkp.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_bkp.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="CAN" Cversion="1.0.0" condition="N32G4FR STDPERIPH RCC">
+            <description>Controller area network (CAN) driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_CAN
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_can.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_can.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="CRC" Cversion="1.0.0" condition="N32G4FR STDPERIPH RCC">
+            <description>CRC calculation unit (CRC) driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_CRC
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_crc.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_crc.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="DAC" Cversion="1.0.0" condition="N32G4FR STDPERIPH RCC">
+            <description>Digital-to-analog converter (DAC) driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_DAC
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_dac.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_dac.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="MCUDBG" Cversion="1.0.0" condition="N32G4FR STDPERIPH">
+            <description>MCU debug component (MCUDBG) driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_DBG
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_dbg.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_dbg.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="DMA" Cversion="1.0.0" condition="N32G4FR STDPERIPH RCC">
+            <description>DMA controller (DMA) driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_DMA
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_dma.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_dma.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="EXTI" Cversion="1.0.0" condition="N32G4FR STDPERIPH RCC">
+            <description>External interrupt/event controller (EXTI) driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_EXTI
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_exti.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_exti.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="FLASH" Cversion="1.0.0" condition="N32G4FR STDPERIPH RCC">
+            <description>Embedded Flash memory driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_FLASH
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_flash.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_flash.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="GPIO" Cversion="1.0.0" condition="N32G4FR STDPERIPH RCC">
+            <description>General-purpose I/O (GPIO) driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_GPIO
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_gpio.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_gpio.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="I2C" Cversion="1.0.0" condition="N32G4FR STDPERIPH RCC">
+            <description>Inter-integrated circuit (I2C) interface driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_I2C
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_i2c.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_i2c.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="IWDG" Cversion="1.0.0" condition="N32G4FR STDPERIPH">
+            <description>Independent watchdog (IWDG) driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_IWDG
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_iwdg.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_iwdg.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="PWR" Cversion="1.0.0" condition="N32G4FR STDPERIPH RCC">
+            <description>Power controller (PWR) driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_PWR
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_pwr.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_pwr.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="RCC" Cversion="1.0.0" condition="N32G4FR STDPERIPH">
+            <description>Reset and clock control (RCC) driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_RCC
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_rcc.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_rcc.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="RTC" Cversion="1.0.0" condition="N32G4FR STDPERIPH">
+            <description>Real-time clock (RTC) driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_RTC
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_rtc.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_rtc.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="DVP" Cversion="1.0.0" condition="N32G4FR STDPERIPH RCC">
+            <description>Digital video port (DVP) driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_DVP
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_dvp.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_dvp.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="QSPI" Cversion="1.0.0" condition="N32G4FR STDPERIPH RCC">
+            <description>Queued SPI (QSPI) driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_QSPI
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_std_periph_driver/inc/n32g4fr_qspi.h"/>
+                <file category="source" name="firmware/n32g4fr_std_periph_driver/src/n32g4fr_qspi.c"/>
+            </files>
+        </component>
+
+        <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="USBDEV" Cversion="1.0.0" condition="N32G4FR STDPERIPH RCC">
+            <description>USB device (USBDEV) driver for N32G4FR</description>
+            <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_USBDEV
+            </RTE_Components_h>
+            <files>
+                <file category="include" name="firmware/n32g4fr_usbfs_driver/inc" />
+                <file category="header" name="firmware/n32g4fr_usbfs_driver/inc/usb_core.h"/>
+                <file category="header" name="firmware/n32g4fr_usbfs_driver/inc/usb_def.h"/>
+                <file category="header" name="firmware/n32g4fr_usbfs_driver/inc/usb_init.h"/>
+                <file category="header" name="firmware/n32g4fr_usbfs_driver/inc/usb_int.h"/>
+                <file category="header" name="firmware/n32g4fr_usbfs_driver/inc/usb_lib.h"/>
+                <file category="header" name="firmware/n32g4fr_usbfs_driver/inc/usb_mem.h"/>
+                <file category="header" name="firmware/n32g4fr_usbfs_driver/inc/usb_regs.h"/>
+                <file category="header" name="firmware/n32g4fr_usbfs_driver/inc/usb_sil.h"/>
+                <file category="header" name="firmware/n32g4fr_usbfs_driver/inc/usb_type.h"/>
+                <file category="source" name="firmware/n32g4fr_usbfs_driver/src/usb_core.c"/>
+                <file category="source" name="firmware/n32g4fr_usbfs_driver/src/usb_init.c"/>
+                <file category="source" name="firmware/n32g4fr_usbfs_driver/src/usb_int.c"/>
+                <file category="source" name="firmware/n32g4fr_usbfs_driver/src/usb_mem.c"/>
+                <file category="source" name="firmware/n32g4fr_usbfs_driver/src/usb_regs.c"/>
+                <file category="source" name="firmware/n32g4fr_usbfs_driver/src/usb_sil.c"/>
+            </files>
+        </component>
+        <component Cclass="Device" Cgroup="Algorithm Libs" Csub="Common" Cversion="1.0.0" condition="N32G4FR CMSIS Device">
+            <RTE_Components_h>
+        #define RTE_DEVICE_ALGO_COMMON
+            </RTE_Components_h>
+            <files>
+                <file category="include" name="firmware/n32g4fr_algo_lib/inc" />
+                <file category="header" name="firmware/n32g4fr_algo_lib/inc/n32g4fr_algo_common.h"/>
+                <file category="source" name="firmware/n32g4fr_algo_lib/lib/n32g4fr_algo_common.lib"/>
+            </files>
+        </component>
+        <component Cclass="Device" Cgroup="Algorithm Libs" Csub="AES" Cversion="1.0.0" condition="N32G4FR Algorithm Common">
+            <RTE_Components_h>
+        #define RTE_DEVICE_ALGO_AES
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_algo_lib/inc/n32g4fr_aes.h"/>
+                <file category="source" name="firmware/n32g4fr_algo_lib/lib/n32g4fr_aes.lib"/>
+            </files>
+        </component>
+        <component Cclass="Device" Cgroup="Algorithm Libs" Csub="DES" Cversion="1.0.0" condition="N32G4FR Algorithm Common">
+            <RTE_Components_h>
+        #define RTE_DEVICE_ALGO_DES
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_algo_lib/inc/n32g4fr_des.h"/>
+                <file category="source" name="firmware/n32g4fr_algo_lib/lib/n32g4fr_des.lib"/>
+            </files>
+        </component>
+        <component Cclass="Device" Cgroup="Algorithm Libs" Csub="RNG" Cversion="1.0.0" condition="N32G4FR Algorithm Common">
+            <RTE_Components_h>
+        #define RTE_DEVICE_ALGO_RNG
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_algo_lib/inc/n32g4fr_rng.h"/>
+                <file category="source" name="firmware/n32g4fr_algo_lib/lib/n32g4fr_rng.lib"/>
+            </files>
+        </component>
+        <component Cclass="Device" Cgroup="Algorithm Libs" Csub="HASH" Cversion="1.0.0" condition="N32G4FR Algorithm Common">
+            <RTE_Components_h>
+        #define RTE_DEVICE_ALGO_HASH
+            </RTE_Components_h>
+            <files>
+                <file category="header" name="firmware/n32g4fr_algo_lib/inc/n32g4fr_hash.h"/>
+                <file category="source" name="firmware/n32g4fr_algo_lib/lib/n32g4fr_hash.lib"/>
+            </files>
+        </component>
+    </components>
+</package>

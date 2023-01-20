@@ -1,0 +1,4 @@
+config ARM_CORTEX_M4
+    bool "ARM CORTEX M4"
+    select ARM_CORTEX_M4
+    default y

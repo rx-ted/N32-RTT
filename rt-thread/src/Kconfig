@@ -307,7 +307,17 @@ menu "Kernel Device Object"
 
         config RT_CONSOLE_DEVICE_NAME
             string "the device name for console"
-            default "uart"
+            default "uart1"
+        config RT_USING_USART1
+            bool "uart1"
+            select RT_USING_USART1
+        config RT_USING_USART2
+            bool "uart2"
+            select RT_USING_USART2
+        config RT_USING_USART3
+            bool "uart3"
+            select RT_USING_USART3
+        
     endif
 
 endmenu
