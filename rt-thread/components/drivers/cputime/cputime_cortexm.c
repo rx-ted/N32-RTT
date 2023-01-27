@@ -1,4 +1,10 @@
 /*
+ * @Author: rx-ted
+ * @Date: 2023-01-15 13:27:31
+ * @LastEditors: rx-ted
+ * @LastEditTime: 2023-01-23 22:12:14
+ */
+/*
  * Copyright (c) 2006-2018, RT-Thread Development Team
  *
  * SPDX-License-Identifier: Apache-2.0
@@ -11,7 +17,6 @@
 #include <rthw.h>
 #include <rtdevice.h>
 #include <rtthread.h>
-
 #include <board.h>
 
 /* Use Cycle counter of Data Watchpoint and Trace Register for CPU time */

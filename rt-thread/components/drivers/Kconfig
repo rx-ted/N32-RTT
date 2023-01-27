@@ -5,9 +5,9 @@ config RT_USING_DEVICE_IPC
     default y
 
 if RT_USING_DEVICE_IPC
-    config RT_PIPE_BUFSZ
-        int "Set pipe buffer size"
-        default 512
+    # config RT_PIPE_BUFSZ
+    #     int "Set pipe buffer size"
+    #     default 512
     
     config RT_USING_SYSTEM_WORKQUEUE
         bool "Using system default workqueue"
@@ -30,14 +30,27 @@ config RT_USING_SERIAL
     select RT_USING_DEVICE
     default y
 
+
+if RT_USING_SERIAL
+config RT_USING_USART1
+    bool "Using serial for uart1"
+    default y
+
+config RT_USING_USARTX
+    bool "Using serial for uartX, can set number."
+    default n
+
+endif
+
+
 if RT_USING_SERIAL
     config RT_SERIAL_USING_DMA
         bool "Enable serial DMA mode"
-        default y
+        default n
 
-    config RT_SERIAL_RB_BUFSZ
-        int "Set RX buffer size"
-        default 64
+    # config RT_SERIAL_RB_BUFSZ
+    #     int "Set RX buffer size"
+    #     default 64
 
 endif
 

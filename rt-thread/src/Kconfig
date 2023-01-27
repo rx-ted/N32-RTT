@@ -58,7 +58,7 @@ config RT_USING_OVERFLOW_CHECK
 
 config RT_USING_HOOK
     bool "Enable system hook"
-    default y
+    default n
     select RT_USING_IDLE_HOOK
     help
         Enable the hook function when system running, such as idle thread hook,
@@ -111,7 +111,7 @@ config RT_DEBUG_COLOR
 
 config RT_DEBUG_INIT_CONFIG
     bool "Enable debugging of components initialization"
-    default n
+    default y
 
 config RT_DEBUG_INIT
     int
@@ -203,15 +203,15 @@ config RT_USING_MUTEX
 
 config RT_USING_EVENT
     bool "Enable event flag"
-    default y
+    default n
 
 config RT_USING_MAILBOX
     bool "Enable mailbox"
-    default y
+    default n
 
 config RT_USING_MESSAGEQUEUE
     bool "Enable message queue"
-    default y
+    default n
 
 config RT_USING_SIGNALS
     bool "Enable signals"
@@ -226,7 +226,7 @@ menu "Memory Management"
 
     config RT_USING_MEMPOOL
         bool "Using memory pool"
-        default y
+        default n
         help
             Using static memory fixed partition
 
@@ -303,21 +303,11 @@ menu "Kernel Device Object"
     if RT_USING_CONSOLE
         config RT_CONSOLEBUF_SIZE
             int "the buffer size for console log printf"
-            default 128
+            default 2048
 
         config RT_CONSOLE_DEVICE_NAME
             string "the device name for console"
-            default "uart1"
-        config RT_USING_USART1
-            bool "uart1"
-            select RT_USING_USART1
-        config RT_USING_USART2
-            bool "uart2"
-            select RT_USING_USART2
-        config RT_USING_USART3
-            bool "uart3"
-            select RT_USING_USART3
-        
+            default "usart1"
     endif
 
 endmenu

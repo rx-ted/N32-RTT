@@ -19,6 +19,11 @@
 #define RT_DEBUG
 #define RT_DEBUG_INIT 1
 #define RT_USING_OVERFLOW_CHECK
+#define IDLE_THREAD_STACK_SIZE 256
+#define RT_USING_TIMER_SOFT
+#define RT_TIMER_THREAD_PRIO       4
+#define RT_TIMER_THREAD_STACK_SIZE 512
+#define RT_DEBUG
 
 /* Using Hook */
 /* #define RT_USING_HOOK */
@@ -126,8 +131,5 @@
 #define DFS_FILESYSTEMS_MAX 2
 /* the max number of opened files   */
 #define DFS_FD_MAX 4
-
-
-
 
 #endif

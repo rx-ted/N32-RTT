@@ -192,9 +192,7 @@
         "../../rt-thread/components/drivers/audio",
         "../../rt-thread/components/drivers/can",
         "../../rt-thread/components/drivers/cherryusb",
-        "../../rt-thread/components/drivers/cputime",
         "../../rt-thread/components/drivers/hwcrypto",
-        "../../rt-thread/components/drivers/hwtimer",
         "../../rt-thread/components/drivers/i2c",
         "../../rt-thread/components/drivers/misc/adc.c",
         "../../rt-thread/components/drivers/misc/dac.c",
@@ -213,11 +211,15 @@
         "../../drivers/drv_adc.c",
         "../../drivers/drv_can.c",
         "../../drivers/drv_dac.c",
-        "../../drivers/drv_hwtimer.c",
         "../../drivers/drv_i2c.c",
         "../../drivers/drv_spi.c",
         "../../drivers/drv_wdt.c",
-        "../../rt-thread/tools"
+        "../../rt-thread/tools",
+        "<virtual_root>/USER/wiring_digital.c",
+        "<virtual_root>/USER/wiring.c",
+        "<virtual_root>/USER/pins_arduino.c",
+        "../../rt-thread/components/drivers/cputime/cputime_cortexm.c",
+        "<virtual_root>/USER/infrared.c"
       ],
       "toolchain": "AC6",
       "compileConfig": {
@@ -282,7 +284,6 @@
           "../../rt-thread/components/drivers/include/drivers",
           "../../rt-thread/components/drivers/include/ipc",
           "../../rt-thread/components/finsh",
-          "../../packages/soft_i2c_rtt",
           "../../packages/infrared_framework/inc"
         ],
         "libList": [
