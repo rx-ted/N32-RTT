@@ -1,3 +1,9 @@
+/*
+ * @Author: rx-ted
+ * @Date: 2023-01-20 19:52:12
+ * @LastEditors: rx-ted
+ * @LastEditTime: 2023-01-23 22:12:37
+ */
 /*****************************************************************************
  * Copyright (c) 2019, Nations Technologies Inc.
  *
@@ -35,7 +41,7 @@
 #ifndef __BOARD_H__
 #define __BOARD_H__
 
-
+#include<system_n32g4fr.h>
 //  <i>Default: 144
 #define N32G4FR_SRAM_SIZE           144
 #define N32G4FR_SRAM_START          (0x20000000 + N32G4FR_SRAM_SIZE/2 * 1024)

@@ -4,6 +4,8 @@
 /* Automatically generated file; DO NOT EDIT. */
 /* RT-Thread Configuration */
 
+#define RT_USING_TINY_SIZE
+
 /* RT-Thread Kernel */
 
 #define RT_NAME_MAX 8
@@ -12,26 +14,21 @@
 #define RT_THREAD_PRIORITY_MAX 32
 #define RT_TICK_PER_SECOND 100
 #define RT_USING_OVERFLOW_CHECK
-#define RT_USING_HOOK
-#define RT_USING_IDLE_HOOK
-#define RT_IDLE_HOOK_LIST_SIZE 4
 #define IDLE_THREAD_STACK_SIZE 256
 #define RT_USING_TIMER_SOFT
 #define RT_TIMER_THREAD_PRIO 4
 #define RT_TIMER_THREAD_STACK_SIZE 512
 #define RT_DEBUG
+#define RT_DEBUG_INIT_CONFIG
+#define RT_DEBUG_INIT 1
 
 /* Inter-Thread communication */
 
 #define RT_USING_SEMAPHORE
 #define RT_USING_MUTEX
-#define RT_USING_EVENT
-#define RT_USING_MAILBOX
-#define RT_USING_MESSAGEQUEUE
 
 /* Memory Management */
 
-#define RT_USING_MEMPOOL
 #define RT_USING_SMALL_MEM
 #define RT_USING_HEAP
 
@@ -39,14 +36,15 @@
 
 #define RT_USING_DEVICE
 #define RT_USING_CONSOLE
-#define RT_CONSOLEBUF_SIZE 128
-#define RT_CONSOLE_DEVICE_NAME "uart1"
-#define RT_USING_USART1
+#define RT_CONSOLEBUF_SIZE 2048
+#define RT_CONSOLE_DEVICE_NAME "usart1"
 #define RT_VER_NUM 0x30104
 #define ARM_CORTEX_M4
 
 /* RT-Thread Components */
 
+#define RT_USING_COMPONENTS_INIT
+#define RT_USING_USER_MAIN
 
 /* C++ features */
 
@@ -64,15 +62,15 @@
 #define FINSH_CMD_SIZE 80
 #define FINSH_USING_MSH
 #define FINSH_USING_MSH_DEFAULT
+#define FINSH_USING_MSH_ONLY
 #define FINSH_ARG_MAX 10
 
 /* Device Drivers */
 
 #define RT_USING_DEVICE_IPC
-#define RT_PIPE_BUFSZ 512
 #define RT_USING_SERIAL
-#define RT_SERIAL_USING_DMA
-#define RT_SERIAL_RB_BUFSZ 64
+#define RT_USING_USART1
+#define RT_USING_HWTIMER
 #define RT_USING_PIN
 
 /* Using USB */
@@ -120,6 +118,20 @@
 
 
 /* samples: kernel and components samples */
+
+#define RT_USING_CPUTIME
+
+// infrared packages
+#define PKG_USING_DRV_INFRARED
+#define PKG_USING_INFRARED
+#define INFRARED_NEC_DECODER
+#define INFRARED_RECEIVE
+// #define INFRARED_RECEIVE_PIN 18  //PB2
+#define INFRARED_RECEIVE_HWTIMER "timer5"
+// #define RT_USING_HWTIMER8
+#define NEC_DEVIATION 100
+#define RT_USING_HWTIMER5
+
 
 
 #endif
