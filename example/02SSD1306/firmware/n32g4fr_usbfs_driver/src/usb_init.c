@@ -1,9 +1,3 @@
-/*
- * @Author: rx-ted
- * @Date: 2023-01-15 13:28:23
- * @LastEditors: rx-ted
- * @LastEditTime: 2023-01-31 00:04:21
- */
 /*****************************************************************************
  * Copyright (c) 2019, Nations Technologies Inc.
  *
@@ -32,25 +26,44 @@
  * ****************************************************************************/
 
 /**
- * @file drv_i2c.h
+ * @file usb_init.c
  * @author Nations
  * @version v1.0.0
  *
  * @copyright Copyright (c) 2019, Nations Technologies Inc. All rights reserved.
  */
+#include "usb_lib.h"
 
-#ifndef __DRV_I2C__
-#define __DRV_I2C__
+/*  The number of current endpoint, it will be used to specify an endpoint */
+uint8_t EPindex;
+/*  The number of current device, it is an index to the Device_Table */
+/* uint8_t  Device_no; */
+/*  Points to the USB_DeviceMess structure of current device */
+/*  The purpose of this register is to speed up the execution */
+USB_DeviceMess* pInformation;
+/*  Points to the DEVICE_PROP structure of current device */
+/*  The purpose of this register is to speed up the execution */
+DEVICE_PROP* pProperty;
+/*  Temporary save the state of Rx & Tx status. */
+/*  Whenever the Rx or Tx state is changed, its value is saved */
+/*  in this variable first and will be set to the EPRB or EPRA */
+/*  at the end of interrupt process */
+uint16_t SaveState;
+uint16_t wInterrupt_Mask;
+USB_DeviceMess Device_Info;
+USER_STANDARD_REQUESTS* pUser_Standard_Requests;
 
-#include "i2c.h"
-#include "rtconfig.h"
-
-struct rt_i2c_bus
+/**
+ * @brief USB system initialization
+ */
+void USB_Init(void)
 {
-    struct rt_i2c_bus_device parent;
-    rt_uint32_t i2c_periph;
-};
-
-int rt_hw_i2c_init(void);
-
-#endif
+    pInformation            = &Device_Info;
+    pInformation->CtrlState = 2;
+    pProperty               = &Device_Property;
+    pUser_Standard_Requests = &User_Standard_Requests;
+    /* Initialize devices one by one */
+    pProperty->Init();
+    /*Pull up DP*/
+    _EnPortPullup();
+}

@@ -1,9 +1,3 @@
-/*
- * @Author: rx-ted
- * @Date: 2023-01-15 13:28:23
- * @LastEditors: rx-ted
- * @LastEditTime: 2023-01-31 00:04:21
- */
 /*****************************************************************************
  * Copyright (c) 2019, Nations Technologies Inc.
  *
@@ -32,25 +26,79 @@
  * ****************************************************************************/
 
 /**
- * @file drv_i2c.h
+ * @file log.h
  * @author Nations
- * @version v1.0.0
+ * @version v1.0.1
  *
  * @copyright Copyright (c) 2019, Nations Technologies Inc. All rights reserved.
  */
+#ifndef __LOG_H__
+#define __LOG_H__
 
-#ifndef __DRV_I2C__
-#define __DRV_I2C__
+#ifndef LOG_ENABLE
+#define LOG_ENABLE 1
+#endif
 
-#include "i2c.h"
-#include "rtconfig.h"
+#if LOG_ENABLE
 
-struct rt_i2c_bus
-{
-    struct rt_i2c_bus_device parent;
-    rt_uint32_t i2c_periph;
-};
+#include "n32g4fr.h"
+#include <stdio.h>
 
-int rt_hw_i2c_init(void);
+#define LOG_USARTx              USART1
+#define LOG_PERIPH              RCC_APB2_PERIPH_USART1
+#define LOG_ENABLE_PERIPH_CLK   RCC_EnableAPB2PeriphClk
+#define LOG_GPIO                GPIOA
+#define LOG_PERIPH_GPIO         RCC_APB2_PERIPH_GPIOA
+#define LOG_REMAP               0
+#define LOG_TX_PIN              GPIO_PIN_9
+#define LOG_RX_PIN              GPIO_PIN_10
+
+#define LOG_NONE    0
+#define LOG_ERROR   10
+#define LOG_WARNING 20
+#define LOG_INFO    30
+#define LOG_DEBUG   40
+
+#ifndef LOG_LEVEL
+#define LOG_LEVEL LOG_DEBUG
+#endif
+
+#if LOG_LEVEL >= LOG_INFO
+#define log_info(...) printf(__VA_ARGS__)
+#else
+#define log_info(...)
+#endif
+
+#if LOG_LEVEL >= LOG_ERROR
+#define log_error(...) printf(__VA_ARGS__)
+#else
+#define log_error(...)
+#endif
+
+#if LOG_LEVEL >= LOG_WARNING
+#define log_warning(...) printf(__VA_ARGS__)
+#else
+#define log_warning(...)
+#endif
+
+#if LOG_LEVEL >= LOG_DEBUG
+#define log_debug(...) printf(__VA_ARGS__)
+#else
+#define log_debug(...)
+#endif
+
+void log_init(void);
+
+#else /* !LOG_ENABLE */
+
+#define log_info(...)
+#define log_warning(...)
+#define log_error(...)
+#define log_debug(...)
+#define log_init()
 
 #endif
+
+#define log_func() log_debug("call %s\r\n", __FUNCTION__)
+
+#endif /* __LOG_H__ */

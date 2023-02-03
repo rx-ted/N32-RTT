@@ -1,9 +1,3 @@
-/*
- * @Author: rx-ted
- * @Date: 2023-01-15 13:28:23
- * @LastEditors: rx-ted
- * @LastEditTime: 2023-01-31 00:04:21
- */
 /*****************************************************************************
  * Copyright (c) 2019, Nations Technologies Inc.
  *
@@ -32,25 +26,27 @@
  * ****************************************************************************/
 
 /**
- * @file drv_i2c.h
+ * @file usb_mem.h
  * @author Nations
  * @version v1.0.0
  *
  * @copyright Copyright (c) 2019, Nations Technologies Inc. All rights reserved.
  */
+#ifndef __USB_MEM_H__
+#define __USB_MEM_H__
 
-#ifndef __DRV_I2C__
-#define __DRV_I2C__
+#include "n32g4fr.h"
 
-#include "i2c.h"
-#include "rtconfig.h"
+/**
+ * @addtogroup N32G4FR_USB_Driver
+ * @{
+ */
 
-struct rt_i2c_bus
-{
-    struct rt_i2c_bus_device parent;
-    rt_uint32_t i2c_periph;
-};
+void USB_CopyUserToPMABuf(uint8_t* pbUsrBuf, uint16_t wPMABufAddr, uint16_t wNBytes);
+void USB_CopyPMAToUserBuf(uint8_t* pbUsrBuf, uint16_t wPMABufAddr, uint16_t wNBytes);
 
-int rt_hw_i2c_init(void);
+/**
+ * @}
+ */
 
-#endif
+#endif /*__USB_MEM_H__*/

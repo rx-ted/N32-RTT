@@ -1,9 +1,3 @@
-/*
- * @Author: rx-ted
- * @Date: 2023-01-15 13:28:23
- * @LastEditors: rx-ted
- * @LastEditTime: 2023-01-31 00:04:21
- */
 /*****************************************************************************
  * Copyright (c) 2019, Nations Technologies Inc.
  *
@@ -32,25 +26,73 @@
  * ****************************************************************************/
 
 /**
- * @file drv_i2c.h
+ * @file usb_def.h
  * @author Nations
  * @version v1.0.0
  *
  * @copyright Copyright (c) 2019, Nations Technologies Inc. All rights reserved.
  */
+#ifndef __USB_DEF_H__
+#define __USB_DEF_H__
 
-#ifndef __DRV_I2C__
-#define __DRV_I2C__
+/**
+ * @addtogroup N32G4FR_USB_Driver
+ * @{
+ */
 
-#include "i2c.h"
-#include "rtconfig.h"
-
-struct rt_i2c_bus
+typedef enum _RECIPIENT_TYPE
 {
-    struct rt_i2c_bus_device parent;
-    rt_uint32_t i2c_periph;
-};
+    DEVICE_RECIPIENT,    /* Recipient device */
+    INTERFACE_RECIPIENT, /* Recipient interface */
+    ENDPOINT_RECIPIENT,  /* Recipient endpoint */
+    OTHER_RECIPIENT
+} RECIPIENT_TYPE;
 
-int rt_hw_i2c_init(void);
+typedef enum _STANDARD_REQUESTS
+{
+    GET_STATUS = 0,
+    CLR_FEATURE,
+    RESERVED1,
+    SET_FEATURE,
+    RESERVED2,
+    SET_ADDRESS,
+    GET_DESCRIPTOR,
+    SET_DESCRIPTOR,
+    GET_CONFIGURATION,
+    SET_CONFIGURATION,
+    GET_INTERFACE,
+    SET_INTERFACE,
+    TOTAL_SREQUEST, /* Total number of Standard request */
+    SYNCH_FRAME = 12
+} STANDARD_REQUESTS;
 
-#endif
+/* Definition of "USBwValue" */
+typedef enum _DESCRIPTOR_TYPE
+{
+    DEVICE_DESCRIPTOR = 1,
+    CONFIG_DESCRIPTOR,
+    STRING_DESCRIPTOR,
+    INTERFACE_DESCRIPTOR,
+    ENDPOINT_DESCRIPTOR
+} DESCRIPTOR_TYPE;
+
+/* Feature selector of a SET_FEATURE or CLR_FEATURE */
+typedef enum _FEATURE_SELECTOR
+{
+    ENDPOINT_STALL,
+    DEVICE_REMOTE_WAKEUP
+} FEATURE_SELECTOR;
+
+/* Definition of "bmRequestType" */
+#define REQUEST_TYPE     0x60 /* Mask to get request type */
+#define STANDARD_REQUEST 0x00 /* Standard request */
+#define CLASS_REQUEST    0x20 /* Class request */
+#define VENDOR_REQUEST   0x40 /* Vendor request */
+
+#define RECIPIENT 0x1F /* Mask to get recipient */
+
+/**
+ * @}
+ */
+
+#endif /* __USB_DEF_H__ */

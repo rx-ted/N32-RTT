@@ -1,9 +1,3 @@
-/*
- * @Author: rx-ted
- * @Date: 2023-01-15 13:28:23
- * @LastEditors: rx-ted
- * @LastEditTime: 2023-01-31 00:04:21
- */
 /*****************************************************************************
  * Copyright (c) 2019, Nations Technologies Inc.
  *
@@ -32,25 +26,80 @@
  * ****************************************************************************/
 
 /**
- * @file drv_i2c.h
+ * @file n32g4fr_crc.h
  * @author Nations
  * @version v1.0.0
  *
  * @copyright Copyright (c) 2019, Nations Technologies Inc. All rights reserved.
  */
+#ifndef __N32G4FR_CRC_H__
+#define __N32G4FR_CRC_H__
 
-#ifndef __DRV_I2C__
-#define __DRV_I2C__
-
-#include "i2c.h"
-#include "rtconfig.h"
-
-struct rt_i2c_bus
-{
-    struct rt_i2c_bus_device parent;
-    rt_uint32_t i2c_periph;
-};
-
-int rt_hw_i2c_init(void);
-
+#ifdef __cplusplus
+extern "C" {
 #endif
+
+#include "n32g4fr.h"
+
+/** @addtogroup N32G4FR_StdPeriph_Driver
+ * @{
+ */
+
+/** @addtogroup CRC
+ * @{
+ */
+
+/** @addtogroup CRC_Exported_Types
+ * @{
+ */
+
+/**
+ * @}
+ */
+
+/** @addtogroup CRC_Exported_Constants
+ * @{
+ */
+
+/**
+ * @}
+ */
+
+/** @addtogroup CRC_Exported_Macros
+ * @{
+ */
+
+/**
+ * @}
+ */
+
+/** @addtogroup CRC_Exported_Functions
+ * @{
+ */
+
+void CRC32_ResetCrc(void);
+uint32_t CRC32_CalcCrc(uint32_t Data);
+uint32_t CRC32_CalcBufCrc(uint32_t pBuffer[], uint32_t BufferLength);
+uint32_t CRC32_GetCrc(void);
+void CRC32_SetIDat(uint8_t IDValue);
+uint8_t CRC32_GetIDat(void);
+
+uint16_t CRC16_CalcBufCrc(uint8_t pBuffer[], uint32_t BufferLength);
+uint16_t CRC16_CalcCRC(uint8_t Data);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* __N32G4FR_CRC_H__ */
+/**
+ * @}
+ */
+
+/**
+ * @}
+ */
+
+/**
+ * @}
+ */

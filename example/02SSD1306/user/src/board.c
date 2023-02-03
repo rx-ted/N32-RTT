@@ -1,9 +1,3 @@
-/*
- * @Author: rx-ted
- * @Date: 2023-01-15 13:28:23
- * @LastEditors: rx-ted
- * @LastEditTime: 2023-01-31 00:04:21
- */
 /*****************************************************************************
  * Copyright (c) 2019, Nations Technologies Inc.
  *
@@ -32,25 +26,71 @@
  * ****************************************************************************/
 
 /**
- * @file drv_i2c.h
+ * @file board.c
  * @author Nations
  * @version v1.0.0
  *
  * @copyright Copyright (c) 2019, Nations Technologies Inc. All rights reserved.
  */
 
-#ifndef __DRV_I2C__
-#define __DRV_I2C__
+#include <rthw.h>
+#include <rtthread.h>
 
-#include "i2c.h"
-#include "rtconfig.h"
+#include "n32g4fr.h"
+#include "board.h"
 
-struct rt_i2c_bus
+/**
+ * @brief  Configures Vector Table base location.
+ */
+void NVIC_Configuration(void)
 {
-    struct rt_i2c_bus_device parent;
-    rt_uint32_t i2c_periph;
-};
-
-int rt_hw_i2c_init(void);
-
+#ifdef  VECT_TAB_RAM
+    /* Set the Vector Table base location at 0x20000000 */
+    NVIC_SetVectorTable(NVIC_VectTab_RAM, 0x0);
+#else  /* VECT_TAB_FLASH  */
+    /* Set the Vector Table base location at 0x08000000 */
+    NVIC_SetVectorTable(NVIC_VectTab_FLASH, 0x0);
 #endif
+}
+
+/**
+ * @brief This is the timer interrupt service routine.
+ */
+void SysTick_Handler(void)
+{
+    /* enter interrupt */
+    rt_interrupt_enter();
+
+    rt_tick_increase();
+
+    /* leave interrupt */
+    rt_interrupt_leave();
+}
+
+/**
+ * @brief This function will initial N32G45x board.
+ */
+void rt_hw_board_init()
+{
+    /* NVIC Configuration */
+    NVIC_Configuration();
+
+    /* Configure the SysTick */
+    SysTick_Config(SystemCoreClock / RT_TICK_PER_SECOND);   /* 10ms */
+    
+#ifdef RT_USING_HEAP
+    /* init memory system */
+    rt_system_heap_init((void *)N32G4FR_SRAM_START, (void *)N32G4FR_SRAM_END);
+#endif //RT_USING_HEAP
+    
+    /* Call components board initial (use INIT_BOARD_EXPORT()) */
+#ifdef RT_USING_COMPONENTS_INIT
+    rt_components_board_init();
+#endif
+
+#ifdef RT_USING_CONSOLE
+    rt_console_set_device(RT_CONSOLE_DEVICE_NAME);
+#endif
+}
+
+/*@}*/

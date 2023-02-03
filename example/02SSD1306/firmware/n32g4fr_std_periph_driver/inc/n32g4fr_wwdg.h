@@ -1,9 +1,3 @@
-/*
- * @Author: rx-ted
- * @Date: 2023-01-15 13:28:23
- * @LastEditors: rx-ted
- * @LastEditTime: 2023-01-31 00:04:21
- */
 /*****************************************************************************
  * Copyright (c) 2019, Nations Technologies Inc.
  *
@@ -32,25 +26,97 @@
  * ****************************************************************************/
 
 /**
- * @file drv_i2c.h
+ * @file n32g4fr_wwdg.h
  * @author Nations
  * @version v1.0.0
  *
  * @copyright Copyright (c) 2019, Nations Technologies Inc. All rights reserved.
  */
+#ifndef __N32G4FR_WWDG_H__
+#define __N32G4FR_WWDG_H__
 
-#ifndef __DRV_I2C__
-#define __DRV_I2C__
-
-#include "i2c.h"
-#include "rtconfig.h"
-
-struct rt_i2c_bus
-{
-    struct rt_i2c_bus_device parent;
-    rt_uint32_t i2c_periph;
-};
-
-int rt_hw_i2c_init(void);
-
+#ifdef __cplusplus
+extern "C" {
 #endif
+
+#include "n32g4fr.h"
+
+/** @addtogroup N32G4FR_StdPeriph_Driver
+ * @{
+ */
+
+/** @addtogroup WWDG
+ * @{
+ */
+
+/** @addtogroup WWDG_Exported_Types
+ * @{
+ */
+
+/**
+ * @}
+ */
+
+/** @addtogroup WWDG_Exported_Constants
+ * @{
+ */
+
+/** @addtogroup WWDG_Prescaler
+ * @{
+ */
+
+#define WWDG_PRESCALER_DIV1 ((uint32_t)0x00000000)
+#define WWDG_PRESCALER_DIV2 ((uint32_t)0x00000080)
+#define WWDG_PRESCALER_DIV4 ((uint32_t)0x00000100)
+#define WWDG_PRESCALER_DIV8 ((uint32_t)0x00000180)
+#define IS_WWDG_PRESCALER_DIV(PRESCALER)                                                                               \
+    (((PRESCALER) == WWDG_PRESCALER_DIV1) || ((PRESCALER) == WWDG_PRESCALER_DIV2)                                      \
+     || ((PRESCALER) == WWDG_PRESCALER_DIV4) || ((PRESCALER) == WWDG_PRESCALER_DIV8))
+#define IS_WWDG_WVALUE(VALUE) ((VALUE) <= 0x7F)
+#define IS_WWDG_CNT(COUNTER)  (((COUNTER) >= 0x40) && ((COUNTER) <= 0x7F))
+
+/**
+ * @}
+ */
+
+/**
+ * @}
+ */
+
+/** @addtogroup WWDG_Exported_Macros
+ * @{
+ */
+/**
+ * @}
+ */
+
+/** @addtogroup WWDG_Exported_Functions
+ * @{
+ */
+
+void WWDG_DeInit(void);
+void WWDG_SetPrescalerDiv(uint32_t WWDG_Prescaler);
+void WWDG_SetWValue(uint8_t WindowValue);
+void WWDG_EnableInt(void);
+void WWDG_SetCnt(uint8_t Counter);
+void WWDG_Enable(uint8_t Counter);
+FlagStatus WWDG_GetEWINTF(void);
+void WWDG_ClrEWINTF(void);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* __N32G4FR__WWDG_H */
+
+/**
+ * @}
+ */
+
+/**
+ * @}
+ */
+
+/**
+ * @}
+ */

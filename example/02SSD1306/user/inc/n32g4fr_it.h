@@ -1,9 +1,3 @@
-/*
- * @Author: rx-ted
- * @Date: 2023-01-15 13:28:23
- * @LastEditors: rx-ted
- * @LastEditTime: 2023-01-31 00:04:21
- */
 /*****************************************************************************
  * Copyright (c) 2019, Nations Technologies Inc.
  *
@@ -32,25 +26,43 @@
  * ****************************************************************************/
 
 /**
- * @file drv_i2c.h
+ * @file n32g4fr_it.h
  * @author Nations
  * @version v1.0.0
  *
  * @copyright Copyright (c) 2019, Nations Technologies Inc. All rights reserved.
  */
+#ifndef __N32G4FR_IT_H__
+#define __N32G4FR_IT_H__
 
-#ifndef __DRV_I2C__
-#define __DRV_I2C__
-
-#include "i2c.h"
-#include "rtconfig.h"
-
-struct rt_i2c_bus
-{
-    struct rt_i2c_bus_device parent;
-    rt_uint32_t i2c_periph;
-};
-
-int rt_hw_i2c_init(void);
-
+#ifdef __cplusplus
+extern "C" {
 #endif
+
+#include "n32g4fr.h"
+
+void NMI_Handler(void);
+void MemManage_Handler(void);
+void BusFault_Handler(void);
+void UsageFault_Handler(void);
+void SVC_Handler(void);
+void DebugMon_Handler(void);
+void PendSV_Handler(void);
+void DMA1_Channel6_IRQHandler(void);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* __N32G4FR_IT_H__ */
+/**
+ * @}
+ */
+
+/**
+ * @}
+ */
+
+/**
+ * @}
+ */

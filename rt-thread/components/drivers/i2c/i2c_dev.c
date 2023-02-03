@@ -9,20 +9,21 @@
  * 2014-08-03     bernard       fix some compiling warning
  */
 
+#include <i2c.h>
+#include <i2c_dev.h>
 #include <rtdevice.h>
-
-#define DBG_TAG               "I2C"
+#define DBG_TAG "I2C"
 #ifdef RT_I2C_DEBUG
-#define DBG_LVL               DBG_LOG
+#define DBG_LVL DBG_LOG
 #else
-#define DBG_LVL               DBG_INFO
+#define DBG_LVL DBG_INFO
 #endif
 #include <rtdbg.h>
 
 static rt_size_t i2c_bus_device_read(rt_device_t dev,
-                                     rt_off_t    pos,
-                                     void       *buffer,
-                                     rt_size_t   count)
+                                     rt_off_t pos,
+                                     void *buffer,
+                                     rt_size_t count)
 {
     rt_uint16_t addr;
     rt_uint16_t flags;
@@ -40,9 +41,9 @@ static rt_size_t i2c_bus_device_read(rt_device_t dev,
 }
 
 static rt_size_t i2c_bus_device_write(rt_device_t dev,
-                                      rt_off_t    pos,
+                                      rt_off_t pos,
                                       const void *buffer,
-                                      rt_size_t   count)
+                                      rt_size_t count)
 {
     rt_uint16_t addr;
     rt_uint16_t flags;
@@ -60,8 +61,8 @@ static rt_size_t i2c_bus_device_write(rt_device_t dev,
 }
 
 static rt_err_t i2c_bus_device_control(rt_device_t dev,
-                                       int         cmd,
-                                       void       *args)
+                                       int cmd,
+                                       void *args)
 {
     rt_err_t ret;
     struct rt_i2c_priv_data *priv_data;
@@ -97,19 +98,18 @@ static rt_err_t i2c_bus_device_control(rt_device_t dev,
 }
 
 #ifdef RT_USING_DEVICE_OPS
-const static struct rt_device_ops i2c_ops = 
-{
-    RT_NULL, 
-    RT_NULL,
-    RT_NULL,
-    i2c_bus_device_read,
-    i2c_bus_device_write,
-    i2c_bus_device_control
-};
+const static struct rt_device_ops i2c_ops =
+    {
+        RT_NULL,
+        RT_NULL,
+        RT_NULL,
+        i2c_bus_device_read,
+        i2c_bus_device_write,
+        i2c_bus_device_control};
 #endif
 
 rt_err_t rt_i2c_bus_device_device_init(struct rt_i2c_bus_device *bus,
-                                       const char               *name)
+                                       const char *name)
 {
     struct rt_device *device;
     RT_ASSERT(bus != RT_NULL);
@@ -119,16 +119,16 @@ rt_err_t rt_i2c_bus_device_device_init(struct rt_i2c_bus_device *bus,
     device->user_data = bus;
 
     /* set device type */
-    device->type    = RT_Device_Class_I2CBUS;
+    device->type = RT_Device_Class_I2CBUS;
     /* initialize device interface */
 #ifdef RT_USING_DEVICE_OPS
-    device->ops     = &i2c_ops;
+    device->ops = &i2c_ops;
 #else
-    device->init    = RT_NULL;
-    device->open    = RT_NULL;
-    device->close   = RT_NULL;
-    device->read    = i2c_bus_device_read;
-    device->write   = i2c_bus_device_write;
+    device->init = RT_NULL;
+    device->open = RT_NULL;
+    device->close = RT_NULL;
+    device->read = i2c_bus_device_read;
+    device->write = i2c_bus_device_write;
     device->control = i2c_bus_device_control;
 #endif
 

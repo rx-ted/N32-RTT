@@ -15,8 +15,8 @@
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "windows-msvc-x64",
-            "compileCommands": "${workspaceFolder}/Led_blink/build/N32G4FR_ARMCC/compile_commands.json",
-            "configurationProvider": "ms-vscode.makefile-tools"
+            "configurationProvider": "cl.eide",
+            "compileCommands": "${workspaceFolder}/build/N32G4FR_ARMCC/compile_commands.json"
         }
     ],
     "version": 4

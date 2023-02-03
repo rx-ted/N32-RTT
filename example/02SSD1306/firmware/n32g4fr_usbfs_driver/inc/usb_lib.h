@@ -1,9 +1,3 @@
-/*
- * @Author: rx-ted
- * @Date: 2023-01-15 13:28:23
- * @LastEditors: rx-ted
- * @LastEditTime: 2023-01-31 00:04:21
- */
 /*****************************************************************************
  * Copyright (c) 2019, Nations Technologies Inc.
  *
@@ -32,25 +26,22 @@
  * ****************************************************************************/
 
 /**
- * @file drv_i2c.h
+ * @file usb_lib.h
  * @author Nations
  * @version v1.0.0
  *
  * @copyright Copyright (c) 2019, Nations Technologies Inc. All rights reserved.
  */
+#ifndef __USB_LIB_H__
+#define __USB_LIB_H__
 
-#ifndef __DRV_I2C__
-#define __DRV_I2C__
+#include "usb_type.h"
+#include "usb_regs.h"
+#include "usb_def.h"
+#include "usb_core.h"
+#include "usb_init.h"
+#include "usb_sil.h"
+#include "usb_mem.h"
+#include "usb_int.h"
 
-#include "i2c.h"
-#include "rtconfig.h"
-
-struct rt_i2c_bus
-{
-    struct rt_i2c_bus_device parent;
-    rt_uint32_t i2c_periph;
-};
-
-int rt_hw_i2c_init(void);
-
-#endif
+#endif /* __USB_LIB_H__ */

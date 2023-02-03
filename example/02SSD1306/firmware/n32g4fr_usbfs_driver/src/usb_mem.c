@@ -1,9 +1,3 @@
-/*
- * @Author: rx-ted
- * @Date: 2023-01-15 13:28:23
- * @LastEditors: rx-ted
- * @LastEditTime: 2023-01-31 00:04:21
- */
 /*****************************************************************************
  * Copyright (c) 2019, Nations Technologies Inc.
  *
@@ -32,25 +26,56 @@
  * ****************************************************************************/
 
 /**
- * @file drv_i2c.h
+ * @file usb_mem.c
  * @author Nations
  * @version v1.0.0
  *
  * @copyright Copyright (c) 2019, Nations Technologies Inc. All rights reserved.
  */
+#include "usb_lib.h"
+u8* EpOutDataPtrTmp;
+u8* EpInDataPtrTmp;
 
-#ifndef __DRV_I2C__
-#define __DRV_I2C__
-
-#include "i2c.h"
-#include "rtconfig.h"
-
-struct rt_i2c_bus
+/**
+ * @brief Copy a buffer from user memory area to packet memory area (PMA)
+ * @param pbUsrBuf pointer to user memory area.
+ * @param wPMABufAddr address into PMA.
+ * @param wNBytes no. of bytes to be copied.
+ */
+void USB_CopyUserToPMABuf(uint8_t* pbUsrBuf, uint16_t wPMABufAddr, uint16_t wNBytes)
 {
-    struct rt_i2c_bus_device parent;
-    rt_uint32_t i2c_periph;
-};
+    uint32_t n = (wNBytes + 1) >> 1; /* n = (wNBytes + 1) / 2 */
+    uint32_t i, temp1, temp2;
+    uint16_t* pdwVal;
+    pdwVal = (uint16_t*)(wPMABufAddr * 2 + PMAAddr);
+    for (i = n; i != 0; i--)
+    {
+        temp1 = (uint16_t)*pbUsrBuf;
+        pbUsrBuf++;
+        temp2     = temp1 | (uint16_t)*pbUsrBuf << 8;
+        *pdwVal++ = temp2;
+        pdwVal++;
+        pbUsrBuf++;
+        EpInDataPtrTmp = pbUsrBuf;
+    }
+}
 
-int rt_hw_i2c_init(void);
-
-#endif
+/**
+ * @brief Copy a buffer from user memory area to packet memory area (PMA)
+ * @param pbUsrBuf    pointer to user memory area.
+ * @param wPMABufAddr address into PMA.
+ * @param wNBytes     no. of bytes to be copied.
+ */
+void USB_CopyPMAToUserBuf(uint8_t* pbUsrBuf, uint16_t wPMABufAddr, uint16_t wNBytes)
+{
+    uint32_t n = (wNBytes + 1) >> 1; /* /2*/
+    uint32_t i;
+    uint32_t* pdwVal;
+    pdwVal = (uint32_t*)(wPMABufAddr * 2 + PMAAddr);
+    for (i = n; i != 0; i--)
+    {
+        *(uint16_t*)pbUsrBuf++ = *pdwVal++;
+        pbUsrBuf++;
+        EpOutDataPtrTmp = pbUsrBuf;
+    }
+}

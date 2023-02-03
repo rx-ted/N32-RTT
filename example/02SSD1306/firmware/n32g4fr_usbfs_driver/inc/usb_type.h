@@ -1,9 +1,3 @@
-/*
- * @Author: rx-ted
- * @Date: 2023-01-15 13:28:23
- * @LastEditors: rx-ted
- * @LastEditTime: 2023-01-31 00:04:21
- */
 /*****************************************************************************
  * Copyright (c) 2019, Nations Technologies Inc.
  *
@@ -32,25 +26,29 @@
  * ****************************************************************************/
 
 /**
- * @file drv_i2c.h
+ * @file usb_type.h
  * @author Nations
  * @version v1.0.0
  *
  * @copyright Copyright (c) 2019, Nations Technologies Inc. All rights reserved.
  */
+#ifndef __USB_TYPE_H__
+#define __USB_TYPE_H__
 
-#ifndef __DRV_I2C__
-#define __DRV_I2C__
+#include "usb_conf.h"
+#include <stdbool.h>
 
-#include "i2c.h"
-#include "rtconfig.h"
+/**
+ * @addtogroup N32G4FR_USB_Driver
+ * @{
+ */
 
-struct rt_i2c_bus
-{
-    struct rt_i2c_bus_device parent;
-    rt_uint32_t i2c_periph;
-};
-
-int rt_hw_i2c_init(void);
-
+#ifndef NULL
+#define NULL ((void*)0)
 #endif
+
+/**
+ * @}
+ */
+
+#endif /* __USB_TYPE_H__ */
