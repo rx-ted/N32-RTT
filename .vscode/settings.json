@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "ssd1306.h": "c",
+        "ssd1306_fonts.h": "c",
+        "rtconfig.h": "c",
+        "drv_i2c.h": "c",
+        "i2c.h": "c",
+        "ssd1306_conf.h": "c",
+        "stddef.h": "c",
+        "string.h": "c",
+        "rtc.h": "c",
+        "time.h": "c",
+        "rtthread.h": "c",
+        "serial.h": "c"
+    }
+}

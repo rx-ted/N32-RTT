@@ -381,7 +381,7 @@ int rt_hw_i2c_init(void)
 #endif
 
 #ifdef RT_USING_I2C2
-#define I2C2_SPEED  100000
+#define I2C2_SPEED  1000000
 
     static struct rt_i2c_bus i2c_bus2;
     I2C_InitType I2C_InitStructure;
