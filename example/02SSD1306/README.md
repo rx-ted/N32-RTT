@@ -16,11 +16,11 @@ add other functions, such as
 
 ## SSD1306 IIC读写时序
 
-![IIC读写时序](https://github.com/rx-ted/N32-RTT/blob/main/example/02SSD1306/doc/SSD1306%20IIC%E8%AF%BB%E5%86%99%E6%97%B6%E5%BA%8F.png)
+[IIC读写时序](https://github.com/rx-ted/N32-RTT/blob/main/example/02SSD1306/doc/SSD1306%20IIC%E8%AF%BB%E5%86%99%E6%97%B6%E5%BA%8F.png)
 
 ## SSD1306 INIT初始化流程
 
-![init初始化流程](https://github.com/rx-ted/N32-RTT/blob/main/example/02SSD1306/doc/init%E5%88%9D%E5%A7%8B%E5%8C%96%E6%B5%81%E7%A8%8B.png)
+[init初始化流程](https://github.com/rx-ted/N32-RTT/blob/main/example/02SSD1306/doc/init%E5%88%9D%E5%A7%8B%E5%8C%96%E6%B5%81%E7%A8%8B.png)
 
 ## usage
 
