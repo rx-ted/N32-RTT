@@ -40,5 +40,7 @@ I choice RT_USING_I2C, speed is set to 1000000(1000K).
 
 
 ## RUN TEST
-<h1>运行测试</h1>
-<video src="https://github.com/rx-ted/N32-RTT/blob/main/example/02SSD1306/doc/test.mp4"></video>
+
+### 运行测试视频
+
+<iframe weight=500 height=500 src="./doc/test.mp4">
