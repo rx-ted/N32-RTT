@@ -1,0 +1,368 @@
+{
+  "name": "03WiFi",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    ".eide/deps",
+    "../../drivers",
+    "../../packages",
+    "../../rt-thread"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "BSP",
+        "files": [
+          {
+            "path": "bsp/src/delay.c"
+          },
+          {
+            "path": "bsp/src/log.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "CMSIS",
+        "files": [
+          {
+            "path": "firmware/CMSIS/device/system_n32g4fr.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "FWLB",
+        "files": [
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/misc.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_adc.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_bkp.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_can.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_crc.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_dac.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_dbg.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_dma.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_dvp.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_exti.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_flash.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_gpio.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_i2c.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_iwdg.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_pwr.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_qspi.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_rcc.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_rtc.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_sdio.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_spi.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_tim.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_tsc.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_usart.c"
+          },
+          {
+            "path": "firmware/n32g4fr_std_periph_driver/src/n32g4fr_wwdg.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "STARTUP",
+        "files": [
+          {
+            "path": "firmware/CMSIS/device/startup/startup_n32g4fr_gcc.s"
+          },
+          {
+            "path": "firmware/CMSIS/device/startup/startup_n32g4fr.s"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "USER",
+        "files": [
+          {
+            "path": "user/src/board.c"
+          },
+          {
+            "path": "user/src/main.c"
+          },
+          {
+            "path": "user/src/n32g4fr_it.c"
+          }
+        ],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": "N32G4FRMEL7",
+  "packDir": ".pack/Nationstech/N32G4FR_DFP.1.0.4",
+  "miscInfo": {
+    "uid": "bc152c26f22756ffa01b7b38253ad6bb"
+  },
+  "targets": {
+    "N32G4FR_ARMCC": {
+      "excludeList": [
+        "<virtual_root>/STARTUP/startup_n32g45x_gcc.s",
+        "<virtual_root>/BSP/log_gcc.c",
+        "<virtual_root>/STARTUP/startup_n32g4fr_gcc.s",
+        "../rt-thread/components/drivers/audio",
+        "../rt-thread/components/drivers/can",
+        "../rt-thread/components/drivers/cherryusb",
+        "../rt-thread/components/drivers/cputime",
+        "../rt-thread/components/drivers/hwcrypto",
+        "../rt-thread/components/drivers/hwtimer",
+        "../rt-thread/components/drivers/mtd",
+        "../rt-thread/components/drivers/rtc",
+        "../rt-thread/components/drivers/sdio",
+        "../rt-thread/components/drivers/spi",
+        "../rt-thread/components/drivers/touch",
+        "../rt-thread/components/drivers/usb",
+        "../rt-thread/components/drivers/wlan",
+        "../rt-thread/components/drivers/watchdog",
+        "../rt-thread/components/drivers/pm",
+        "../rt-thread/components/drivers/misc/adc.c",
+        "../rt-thread/components/drivers/misc/dac.c",
+        "../rt-thread/components/drivers/misc/pulse_encoder.c",
+        "../rt-thread/components/drivers/misc/rt_drv_pwm.c",
+        "../rt-thread/components/drivers/misc/rt_inputcapture.c",
+        "../drivers/drv_adc.c",
+        "../drivers/drv_can.c",
+        "../drivers/drv_dac.c",
+        "../drivers/drv_spi.c",
+        "../drivers/drv_wdt.c",
+        "../rt-thread/components/cplusplus",
+        "../rt-thread/components/libc",
+        "../packages/rtt-ssd1306/tools",
+        "../packages/rtt-ssd1306/src/ssd1306_fonts.c",
+        "../packages/rtt-ssd1306",
+        "<virtual_root>/USER/ssd1306.c",
+        "../packages/soft_i2c_rtt",
+        "../drivers/drv_i2c.c",
+        "../drivers/drv_hwtimer.c",
+        "../rt-thread/components/drivers/i2c",
+        "../../rt-thread/components/cplusplus",
+        "../../rt-thread/components/drivers/audio",
+        "../../rt-thread/components/drivers/can",
+        "../../rt-thread/components/drivers/cherryusb",
+        "../../rt-thread/components/drivers/hwcrypto",
+        "../../rt-thread/components/drivers/misc/adc.c",
+        "../../rt-thread/components/drivers/misc/dac.c",
+        "../../rt-thread/components/drivers/misc/pulse_encoder.c",
+        "../../rt-thread/components/drivers/misc/rt_drv_pwm.c",
+        "../../rt-thread/components/drivers/misc/rt_inputcapture.c",
+        "../../rt-thread/components/drivers/mtd",
+        "../../rt-thread/components/drivers/pm",
+        "../../rt-thread/components/drivers/sdio",
+        "../../rt-thread/components/drivers/spi",
+        "../../rt-thread/components/drivers/touch",
+        "../../rt-thread/components/drivers/usb",
+        "../../rt-thread/components/drivers/watchdog",
+        "../../rt-thread/components/drivers/wlan",
+        "../../drivers/drv_adc.c",
+        "../../drivers/drv_can.c",
+        "../../drivers/drv_dac.c",
+        "../../drivers/drv_spi.c",
+        "../../drivers/drv_wdt.c",
+        "../../rt-thread/tools",
+        "<virtual_root>/USER/wiring_digital.c",
+        "<virtual_root>/USER/wiring.c",
+        "<virtual_root>/USER/pins_arduino.c",
+        "../../rt-thread/components/drivers/cputime/cputime_cortexm.c",
+        "<virtual_root>/USER/infrared.c",
+        "../../packages/u8g2-v1.2.0/examples",
+        "../../drivers/drv_hwtimer.c",
+        "../../rt-thread/components/drivers/hwtimer",
+        "../../rt-thread/components/drivers/cputime",
+        "../../packages/rtt-ssd1306/examples",
+        "../../rt-thread/components/drivers/i2c/i2c-bit-ops.c",
+        "../../rt-thread/components/drivers/rtc/alarm.c",
+        "../../rt-thread/components/drivers/rtc/soft_rtc.c",
+        "../../rt-thread/components/libc/aio",
+        "../../rt-thread/components/libc/libdl",
+        "../../rt-thread/components/libc/mmap",
+        "../../rt-thread/components/libc/pthreads",
+        "../../rt-thread/components/libc/signal",
+        "../../rt-thread/components/libc/termios",
+        "../../rt-thread/components/libc/time",
+        "../../rt-thread/components/libc/compilers/armlibc",
+        "../../rt-thread/components/libc/compilers/dlib",
+        "../../rt-thread/components/libc/compilers/minilibc",
+        "../../rt-thread/components/libc/compilers/newlib"
+      ],
+      "toolchain": "AC6",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "none",
+        "useCustomScatterFile": false,
+        "scatterFilePath": "<YOUR_SCATTER_FILE>.sct",
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x24000"
+              },
+              "isChecked": true,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x08000000",
+                "size": "0x80000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "Nationstech",
+          "cpuName": "N32G4FRRE"
+        },
+        "proType": 1,
+        "speed": 4000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "user/inc",
+          "firmware/CMSIS/core",
+          "firmware/CMSIS/device",
+          "bsp/inc",
+          "firmware/n32g4fr_std_periph_driver/inc",
+          ".eide/deps",
+          "../../drivers",
+          "../../rt-thread/include",
+          "../../rt-thread/include/libc",
+          "../../rt-thread/components/drivers/include",
+          "../../rt-thread/components/drivers/include/drivers",
+          "../../rt-thread/components/drivers/include/ipc",
+          "../../rt-thread/components/finsh",
+          "../../packages/infrared_framework/inc",
+          "../../packages/u8g2-v1.2.0/src",
+          "../../packages/u8g2-v1.2.0/port",
+          "../../packages/rtt-ssd1306/inc",
+          "../../rt-thread/components/libc/compilers/common"
+        ],
+        "libList": [
+          ".."
+        ],
+        "sourceDirList": [],
+        "defineList": [
+          "N32G4FR",
+          "USE_STDPERIPH_DRIVER"
+        ]
+      }
+    },
+    "N32G4FR_GCC": {
+      "excludeList": [
+        "<virtual_root>/STARTUP/startup_n32g45x_gcc.s",
+        "<virtual_root>/BSP/log_gcc.c",
+        "<virtual_root>/STARTUP/startup_n32g4fr.s"
+      ],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "single",
+        "scatterFilePath": "firmware\\CMSIS\\device\\n32g4fr_flash.ld",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [],
+          "ROM": []
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "Nationstech",
+          "cpuName": "N32G4FRRE"
+        },
+        "proType": 1,
+        "speed": 4000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "user/inc",
+          "firmware/CMSIS/core",
+          "firmware/CMSIS/device",
+          "bsp/inc",
+          "firmware/n32g4fr_std_periph_driver/inc"
+        ],
+        "libList": [],
+        "sourceDirList": [],
+        "defineList": [
+          "USE_STDPERIPH_DRIVER",
+          "N32G4FR"
+        ]
+      }
+    }
+  },
+  "version": "3.3"
+}
