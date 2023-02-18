@@ -234,7 +234,12 @@
         "../../rt-thread/components/libc/compilers/armlibc",
         "../../rt-thread/components/libc/compilers/dlib",
         "../../rt-thread/components/libc/compilers/minilibc",
-        "../../rt-thread/components/libc/compilers/newlib"
+        "../../rt-thread/components/libc/compilers/newlib",
+        "../../packages/RTduino",
+        "../../packages/at_device",
+        "../../rt-thread/components/net/lwip",
+        "../../rt-thread/components/net/at",
+        "../../rt-thread/components/net"
       ],
       "toolchain": "AC6",
       "compileConfig": {
