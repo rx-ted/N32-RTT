@@ -2,10 +2,10 @@
  * @Author: rx-ted
  * @Date: 2022-12-15 20:28:07
  * @LastEditors: rx-ted
- * @LastEditTime: 2023-02-18 21:29:05
+ * @LastEditTime: 2023-02-19 22:38:25
 -->
 
-# # 【国民技术N32项目移植】 基于 Windows 的 ARM GCC 开发环境
+# 【国民技术N32项目移植】 基于 Windows 的 ARM GCC 开发环境
 
 - **目录**
 - [基于 Windows 的 ARM GCC 开发环境](#基于-windows-的-arm-gcc-开发环境)
@@ -26,7 +26,7 @@
 本文以 N32G4FR 系列 MCU 为例，介绍了在 Windows 环境下基于 vscode 编辑器、GCC 编
 译工具链和 GDB 调试工具进行搭建开发环境、编译、固件下载和代码调试的方法。
 
-> 声明：不包含rt-thread
+> 说明：可以不添加rt-thread库
 
 ## 开发工具
 
@@ -41,22 +41,24 @@
 ### 硬件
 
 1) 开发板 N32G4FR
-2) 一条数据线
+2) 若干条数据线
 
 ## 开发环境搭建
 
 ### 安装 VScode 软件
 
-下载软件：[VScode](https://code.visualstudio.com)
+下载软件：[VScode](https://code.visualstudio.com
+
+![](./doc/vscode%20gui.png)
 
 ### 安装 gcc 编译工具链
 
 下载地址：[gcc](https://launchpad.net/gcc-arm-embedded)
-
+![](doc/eabi.png)
 ### 安装 make for Windows
 
 下载地址：[make](http://www.equation.com/servlet/equation.cmd?fa=make)
-
+![](doc/make.png)
 ### 安装 JLink 工具
 
 略
@@ -79,6 +81,10 @@
 
 ## 编译和下载
 
+源代码：[传送门](https://github.com/rx-ted/N32G4FR)
+
+里面有make文件和开发环境
+
 在第一个目录下运行
 
 ```cmd
@@ -97,3 +103,6 @@ arm-none-eabi-size build/output.elf
 arm-none-eabi-objcopy -O ihex -S build/output.elf build/output.hex
 arm-none-eabi-objcopy -O binary -S build/output.elf build/output.bin
 ```
+
+<!-- <video src="./doc/开发环境与编译.mp4"></video> -->
+
