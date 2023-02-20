@@ -50,7 +50,7 @@ EIDE
 烧录工具：pwlink、swd，等
 移植库包（SDK、Core，Example等等）
 
-怎么搭建开发环境，[传送门](https://baidu.com)
+怎么搭建开发环境，[传送门](https://github.com/rx-ted/N32-RTT/tree/main/example/000init)
 
 总结：在过程中搭建环境或者移植中，遇到一些困难，只要认真解决，在群上多问问，多动脑子，多多动手编程，这样会发现原来是这样的，我怎么没想到~
 
@@ -65,11 +65,11 @@ FinSH主要用于调试、查看系统信息，也支持敲代码，不再是只
 
 SSD1306 IIC读写时序
 
-[IIC读写时序](https://github.com/rx-ted/N32-RTT/blob/main/example/02SSD1306/doc/SSD1306%20IIC%E8%AF%BB%E5%86%99%E6%97%B6%E5%BA%8F.png)
+![IIC读写时序](https://github.com/rx-ted/N32-RTT/blob/main/example/02SSD1306/doc/SSD1306%20IIC%E8%AF%BB%E5%86%99%E6%97%B6%E5%BA%8F.png?raw=true)
 
 SSD1306 INIT初始化流程
 
-[init初始化流程](https://github.com/rx-ted/N32-RTT/blob/main/example/02SSD1306/doc/init%E5%88%9D%E5%A7%8B%E5%8C%96%E6%B5%81%E7%A8%8B.png)
+![init初始化流程](https://github.com/rx-ted/N32-RTT/blob/main/example/02SSD1306/doc/init%E5%88%9D%E5%A7%8B%E5%8C%96%E6%B5%81%E7%A8%8B.png?raw=true)
 
 基于RT-Thread实现，OLED的I2C驱动都是自己修改，因为使用硬件IIC不能与库兼容起来，如果需要兼容则需要修改源码，目前已实现。其他人开发的库，包括I2C和SPI，但我只是删除了SPI函数，目前正常。
 我选择RT_USING_I2C，且设置I2C1，速率就默认好了。
@@ -92,7 +92,7 @@ add other functions, such as  ~~~~
 | :----------: | :----------------------------------------------------: |
 | RTT_SSD1306  | [传送门](https://github.com/luhuadong/rtt-ssd1306.git) |
 
-[rtt-ssd1306 API使用](../../packages/rtt-ssd1306/README.md)
+[rtt-ssd1306 API使用](https://github.com/rx-ted/N32-RTT/tree/main/packages/rtt-ssd1306)
 
 ## 3.参赛作品代码与演示视频
 
@@ -103,4 +103,5 @@ add other functions, such as  ~~~~
 
 ### RUN TEST
 
-[运行测试视频](https://github.com/rx-ted/N32-RTT/blob/main/example/02SSD1306/doc/test.mp4)
+[运行测试视频](https://github.com/rx-ted/N32-RTT/blob/main/example/02SSD1306/doc/test.mp4?raw=true)
+
