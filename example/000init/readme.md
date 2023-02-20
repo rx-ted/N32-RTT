@@ -2,13 +2,13 @@
  * @Author: rx-ted
  * @Date: 2022-12-15 20:28:07
  * @LastEditors: rx-ted
- * @LastEditTime: 2023-02-19 22:42:54
+ * @LastEditTime: 2023-02-19 22:47:37
 -->
 
 # 【国民技术N32项目移植】 基于 Windows 的 ARM GCC 开发环境
 
 - **目录**
-- 
+
 - [基于 Windows 的 ARM GCC 开发环境](#基于-windows-的-arm-gcc-开发环境)
   - [概述](#概述)
   - [开发工具](#开发工具)
@@ -50,16 +50,16 @@
 
 下载软件：[VScode](https://code.visualstudio.com
 
-![](./doc/vscode%20gui.png)
+![dd](https://github.com/rx-ted/N32-RTT/blob/main/example/000init/doc/vscode%20gui.png?raw=true)
 
 ### 安装 gcc 编译工具链
 
 下载地址：[gcc](https://launchpad.net/gcc-arm-embedded)
-![](doc/eabi.png)
+![](https://github.com/rx-ted/N32-RTT/blob/main/example/000init/doc/eabi.png?raw=true)
 ### 安装 make for Windows
 
 下载地址：[make](http://www.equation.com/servlet/equation.cmd?fa=make)
-![](doc/make.png)
+![](https://github.com/rx-ted/N32-RTT/blob/main/example/000init/doc/make.png?raw=true)
 ### 安装 JLink 工具
 
 略
@@ -104,6 +104,4 @@ arm-none-eabi-size build/output.elf
 arm-none-eabi-objcopy -O ihex -S build/output.elf build/output.hex
 arm-none-eabi-objcopy -O binary -S build/output.elf build/output.bin
 ```
-
-<!-- <video src="./doc/开发环境与编译.mp4"></video> -->
 
