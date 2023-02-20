@@ -21,12 +21,22 @@
 #include <rtgui/rtgui_system.h>
 #endif
 
-// #define I2C_SDA GET_PIN(B, 9)
-// #define I2C_SCL GET_PIN(B, 8)
-// static rt_soft_i2c_bus_device_t ssd1306_obj = RT_NULL;
-// #define OLED_COLUMN_NUMBER 128
-// #define OLED_LINE_NUMBER 32
-// #define OLED_PAGE_NUMBER OLED_LINE_NUMBER/8
+/* Official Arduino */
+#define LOW 0x0
+#define HIGH 0x1
+#define CHANGE 0x2
+#define FALLING 0x3
+#define RISING 0x4
+
+
+#define INPUT 0x0
+#define OUTPUT 0x1
+#define INPUT_PULLUP 0x2
+/* RT-Thread extension */
+#define INPUT_FLOATING INPUT
+#define INPUT_PULLDOWN 0x3
+#define OUTPUT_OPEN_DRAIN 0x4
+
 
 ALIGN(RT_ALIGN_SIZE)
 static rt_uint8_t led0_stack[512], led1_stack[512];
@@ -112,12 +122,77 @@ int led2()
     return 0;
 }
 
+
+void pinMode(uint8_t pin, uint8_t mode)
+{
+    rt_base_t rt_mode;
+
+    switch(mode)
+    {
+    case INPUT:
+        rt_mode = PIN_MODE_INPUT;
+        break;
+
+    case OUTPUT:
+        rt_mode = PIN_MODE_OUTPUT;
+        break;
+
+    case INPUT_PULLUP:
+        rt_mode = PIN_MODE_INPUT_PULLUP;
+        break;
+
+    case INPUT_PULLDOWN:
+        rt_mode = PIN_MODE_INPUT_PULLDOWN;
+        break;
+
+    case OUTPUT_OPEN_DRAIN:
+        rt_mode = PIN_MODE_OUTPUT_OD;
+        break;
+
+    default:
+        rt_mode = RT_NULL;
+        // LOG_E("pinMode mode parameter is illegal");
+        return;
+    }
+    rt_pin_mode(pin, rt_mode);
+}
+
+
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+    rt_base_t rt_val;
+    if(val == HIGH)
+    {
+        rt_val = PIN_HIGH;
+    }
+    else if(val == LOW)
+    {
+        rt_val = PIN_LOW;
+    }
+    else
+    {
+        return;
+    }
+    rt_pin_write(pin, rt_val);
+}
+
+void delay(unsigned long ms){
+    rt_thread_mdelay(ms);
+}
+
 /**
  * @brief  Main program
  */
 int main(void)
 {
 
+    pinMode( LED1_PIN, OUTPUT);
+    while(1){
+    digitalWrite(LED1_PIN, HIGH);//LED灯亮
+    delay(1000);//等待1秒
+    digitalWrite(LED1_PIN, LOW);//LED灯灭
+    delay(1000);
+    }
     return 0;
 }
 
