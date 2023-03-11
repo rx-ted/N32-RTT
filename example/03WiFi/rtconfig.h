@@ -70,11 +70,6 @@
 #define RT_USING_DEVICE_IPC
 #define RT_USING_SERIAL
 #define RT_USING_USART1
-#define RT_USING_HWTIMER
-#define RT_USING_I2C
-#define RT_I2C_DEBUG
-#define RT_USING_I2C_BITOPS
-#define RT_I2C_BITOPS_DEBUG
 #define RT_USING_PIN
 
 /* Using USB */
@@ -117,30 +112,11 @@
 
 /* peripheral libraries and drivers */
 
-#define PKG_USING_U8G2
-#define U8G2_USE_HW_I2C
-#define U8G2_I2C_DEVICE_NAME "i2c1"
-
-/* U8G2 Examples */
-
-#define U8G2_USING_HW_I2C_SSD1306
-#define PKG_USING_U8G2_V120
-
-
-/* C   version: v1.x.x */
-
-/* C++ version: v2.x.x */
-
-#define PKG_U8G2_VER_NUM 0x10200
 
 /* miscellaneous packages */
 
 
 /* samples: kernel and components samples */
-
-
-#define RT_USING_I2C1
-
 
 
 #endif

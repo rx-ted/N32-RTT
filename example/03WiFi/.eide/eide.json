@@ -127,6 +127,9 @@
         "name": "USER",
         "files": [
           {
+            "path": "user/src/arduino_main.c"
+          },
+          {
             "path": "user/src/board.c"
           },
           {
@@ -187,7 +190,6 @@
         "../drivers/drv_i2c.c",
         "../drivers/drv_hwtimer.c",
         "../rt-thread/components/drivers/i2c",
-        "../../rt-thread/components/cplusplus",
         "../../rt-thread/components/drivers/audio",
         "../../rt-thread/components/drivers/can",
         "../../rt-thread/components/drivers/cherryusb",
@@ -234,7 +236,44 @@
         "../../rt-thread/components/libc/compilers/armlibc",
         "../../rt-thread/components/libc/compilers/dlib",
         "../../rt-thread/components/libc/compilers/minilibc",
-        "../../rt-thread/components/libc/compilers/newlib"
+        "../../rt-thread/components/libc/compilers/newlib",
+        "../../packages/at_device/samples",
+        "../../packages/at_device/class/a9g",
+        "../../packages/at_device/class/air720",
+        "../../packages/at_device/class/bc26",
+        "../../packages/at_device/class/bc28",
+        "../../packages/at_device/class/ec20",
+        "../../packages/at_device/class/ec200x",
+        "../../packages/at_device/class/esp32",
+        "../../packages/at_device/class/l610",
+        "../../packages/at_device/class/m5311",
+        "../../packages/at_device/class/m6315",
+        "../../packages/at_device/class/w60x",
+        "../../packages/at_device/class/sim800c",
+        "../../packages/at_device/class/sim76xx",
+        "../../packages/at_device/class/rw007",
+        "../../packages/at_device/class/n58",
+        "../../packages/at_device/class/n21",
+        "../../packages/at_device/class/mw31",
+        "../../packages/at_device/class/me3616",
+        "../../packages/at_device/class/ml305",
+        "../../packages/at_device/class/n720",
+        "../../packages/at_device/class/m26",
+        "../../packages/Arduino",
+        "../../packages/rtt-ssd1306",
+        "../../packages/infrared_framework",
+        "../../rt-thread/components/net/lwip-dhcpd",
+        "../../rt-thread/components/net/lwip-nat",
+        "../../rt-thread/components/net/sal",
+        "../../rt-thread/components/net/netdev",
+        "../../rt-thread/components/net",
+        "../../packages/at_device",
+        "../../packages/RTduino/docs",
+        "../../packages/RTduino/examples",
+        "../../packages/RTduino/libraries",
+        "../../packages/RTduino/logo",
+        "../../rt-thread/components/cplusplus",
+        "../../packages/RTduino/core/HardwareSerial.cpp"
       ],
       "toolchain": "AC6",
       "compileConfig": {
@@ -303,7 +342,9 @@
           "../../packages/u8g2-v1.2.0/src",
           "../../packages/u8g2-v1.2.0/port",
           "../../packages/rtt-ssd1306/inc",
-          "../../rt-thread/components/libc/compilers/common"
+          "../../rt-thread/components/libc/compilers/common",
+          "../../packages/RTduino/core",
+          "../../rt-thread/components/cplusplus"
         ],
         "libList": [
           ".."

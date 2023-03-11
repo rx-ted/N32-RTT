@@ -110,5 +110,6 @@
 #define RT_USING_I2C2
 #define RT_USING_RTC
 #define RT_USING_SOFT_RTC
+#define RT_USING_MESSAGEQUEUE
 
 #endif
